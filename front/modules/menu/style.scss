@@ -1,0 +1,66 @@
+$border: 1px solid #8c9acc;
+$color: #AFF8AE;
+
+@mixin flex-find {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin category {
+  border: $border;
+  background: $color;
+  margin-top: 5px;
+}
+
+.find {
+  @include flex-find;
+
+  .find-area {
+    border: $border;
+    background: $color;
+    flex: 3;
+    padding-left: 10px;
+
+    &:focus {
+      background: #ffffff;
+    }
+  }
+
+  .find-button {
+    border: $border;
+    background: $color;
+    flex: 1;
+
+    &:hover {
+      background: #408cda;
+      color: #ffffff;
+    }
+  }
+}
+
+.category {
+  @include category;
+
+  a {
+    color: #408cda;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    .title {
+      text-align: center;
+      vertical-align: middle;
+      border-bottom: 1px solid #ffffff;
+      padding: 1px;
+
+      &:hover {
+        background: #408cda;
+        color: black
+      }
+
+    }
+
+  }
+}

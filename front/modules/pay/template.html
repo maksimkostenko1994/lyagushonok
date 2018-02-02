@@ -1,0 +1,39 @@
+
+<div id="myModal" class="modal fade pay" role="dialog" style="opacity: 1; display: block;">
+    <div class="modal-dialog">
+
+        <div class="modal-content pay window">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Оплата</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12" ng-repeat="store in storeData| unique:'img'">
+                        <div class="row pay-modal">
+                            <div class="col-lg-5"><img ng-src="{{store.img}}"
+                                                       height="150px"
+                                                       width="200px"></div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="row text-padding">{{store.name}}</div>
+                                <div class="row text-padding">{{store.key}}</div>
+                                <div class="row text-padding">{{store.price}}</div>
+                                <div class="row text-padding">{{store.category}}</div>
+                                <div class="row text-padding">{{store.description}}</div>
+                            </div>
+                            <a ng-click="remove(store[$index])">
+                                <div class="col-lg-1"><span class="glyphicon glyphicon-remove"></span></div>
+                            </a>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div align="right">
+                <a href="#!/toys" type="button" class="btn btn-default" data-dismiss="modal">Далее</a>
+                <a href="#!/toys" type="button" class="btn btn-default" data-dismiss="modal">Закрить</a>
+            </div>
+        </div>
+
+    </div>
+</div>

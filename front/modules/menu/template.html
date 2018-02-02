@@ -1,0 +1,20 @@
+<link rel="stylesheet" type="text/css" href="/app/modules/menu/style.css">
+
+<div class="find row">
+    <input type="text" class="find-area" ng-model="item" placeholder="Поиск" maxlength="16">
+
+    <button type="button" class="find-button" ng-click="finding(item)"><span
+            class="glyphicon glyphicon-search"></span>
+    </button>
+</div>
+<div class="category row">
+    <a href="#!/toys">
+        <div class="title">
+            <h3><b><span>Каталог товаров</span></b></h3>
+        </div>
+    </a>
+    <ul type="none" ng-repeat="toy in toys | unique:'category'">
+        <li><h4><a ng-click="category(toy.category)">{{toy.category}}</a></h4></li>
+    </ul>
+
+</div>

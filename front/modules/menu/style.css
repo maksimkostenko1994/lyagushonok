@@ -1,0 +1,37 @@
+.find {
+  display: flex;
+  flex-direction: row; }
+  .find .find-area {
+    border: 1px solid #8c9acc;
+    background: #AFF8AE;
+    flex: 3;
+    padding-left: 10px; }
+    .find .find-area:focus {
+      background: #ffffff; }
+  .find .find-button {
+    border: 1px solid #8c9acc;
+    background: #AFF8AE;
+    flex: 1; }
+    .find .find-button:hover {
+      background: #408cda;
+      color: #ffffff; }
+
+.category {
+  border: 1px solid #8c9acc;
+  background: #AFF8AE;
+  margin-top: 5px; }
+  .category a {
+    color: #408cda;
+    cursor: pointer; }
+    .category a:hover {
+      text-decoration: none; }
+    .category a .title {
+      text-align: center;
+      vertical-align: middle;
+      border-bottom: 1px solid #ffffff;
+      padding: 1px; }
+      .category a .title:hover {
+        background: #408cda;
+        color: black; }
+
+/*# sourceMappingURL=style.css.map */

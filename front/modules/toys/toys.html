@@ -1,0 +1,20 @@
+<link rel="stylesheet" type="text/css" href="/app/modules/toys/style.css">
+
+
+<div class="toy row">
+    <div class="col-md-4 col-lg-4" ng-repeat="toy in toys">
+        <div class="height">
+            <div class="row" align="center">
+                <img ng-src="{{toy.pictures[$index].url}}" class="image" align="middle" height="85px"
+                     width="125px">
+            </div>
+            <div class="row" align="center"><b>{{toy.name}}</b></div>
+            <div class="row"><h6><b>Описание:</b> {{toy.description}}</h6></div>
+            <div class="row"><h5><b>{{toy.price | currency: '₴'}}</b></h5></div>
+        </div>
+        <a ng-click="addToy(toy.name, toy.price, toy.pictures[$index].url, toy.key, toy.description, toy.category)">
+            <div class="button" align="center">Купить</div>
+        </a>
+    </div>
+</div>
+

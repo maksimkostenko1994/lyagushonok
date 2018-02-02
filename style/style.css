@@ -1,0 +1,57 @@
+body {
+  background-image: url("https://re-space.ru/wp-content/uploads/2014/09/kids-21-2-300x300.jpg");
+  background-size: 10%;
+  font-size: 17px;
+  font: Helvetica, sans-serif;
+  color: #408cda; }
+
+.border {
+  border: 1px solid #8c9acc; }
+
+.head {
+  display: flex;
+  flex-flow: row;
+  background: #daf0ff; }
+  .head .img {
+    flex: 2;
+    margin-left: -15px;
+    margin-right: -15px; }
+  .head .contact {
+    flex: 1;
+    height: 290px;
+    padding-top: 20%; }
+  .head .contact ul {
+    list-style-type: none; }
+
+.content {
+  margin-top: 5px;
+  margin-bottom: 60px; }
+  .content .margin {
+    margin-right: 5px;
+    margin-left: 5px; }
+    .content .margin .nav-button {
+      text-align: center;
+      border: 1px solid #8c9acc;
+      height: 25px;
+      background: #AFF8AE; }
+    .content .margin .nav-active {
+      border-bottom: none; }
+    .content .margin .info {
+      background: #AFF8AE;
+      border-bottom: 1px solid #8c9acc;
+      border-left: 1px solid #8c9acc;
+      border-right: 1px solid #8c9acc; }
+
+.bot-menu {
+  background: #daf0ff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 25px; }
+  .bot-menu .bot-nav {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-left: 1px solid #8c9acc;
+    border-right: 1px solid #8c9acc; }
+
+/*# sourceMappingURL=style.css.map */
