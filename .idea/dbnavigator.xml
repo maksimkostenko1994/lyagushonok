@@ -47,10 +47,10 @@ insert into staffs(name,key,price,category,description,picture_id) values ('Рљ
     </last-used-providers>
   </component>
   <component name="DBNavigator.Project.FileConnectionMappingManager">
+    <mapping file-url="file://$PROJECT_DIR$/postgres/views/staffs.sql" connection-id="87f615b6-3991-4576-9df6-45db62b20201" session-id="MAIN" current-schema="public" />
+    <mapping file-url="file://$PROJECT_DIR$/mysql/create.sql" connection-id="c3b6e217-db31-4f26-a800-f50492a9c7c1" session-id="MAIN" current-schema="frogdb" />
     <mapping file-url="file://$PROJECT_DIR$/postgres/tables/pictures.sql" connection-id="87f615b6-3991-4576-9df6-45db62b20201" session-id="MAIN" current-schema="public" />
     <mapping file-url="file://$PROJECT_DIR$/postgres/tables/staffs.sql" connection-id="87f615b6-3991-4576-9df6-45db62b20201" session-id="MAIN" current-schema="public" />
-    <mapping file-url="file://$PROJECT_DIR$/mysql/create.sql" connection-id="c3b6e217-db31-4f26-a800-f50492a9c7c1" session-id="MAIN" current-schema="frogdb" />
-    <mapping file-url="file://$PROJECT_DIR$/postgres/views/staffs.sql" connection-id="87f615b6-3991-4576-9df6-45db62b20201" session-id="MAIN" current-schema="public" />
   </component>
   <component name="DBNavigator.Project.MethodExecutionManager">
     <method-browser />
@@ -69,8 +69,8 @@ insert into staffs(name,key,price,category,description,picture_id) values ('Рљ
   </component>
   <component name="DBNavigator.Project.ScriptExecutionManager" clear-outputs="true">
     <recently-used-interfaces>
-      <mapping database-type="MYSQL" interface-id="391037f3-0499-4c0e-8720-a6bf772b27a0" />
       <mapping database-type="POSTGRES" interface-id="33ea6649-feef-4484-a994-e19c3bc60b68" />
+      <mapping database-type="MYSQL" interface-id="391037f3-0499-4c0e-8720-a6bf772b27a0" />
     </recently-used-interfaces>
   </component>
   <component name="DBNavigator.Project.Settings">
