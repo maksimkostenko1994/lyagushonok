@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "faa368d17c1ccbd2bd95"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "0669e12bbb4358a7f316"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -35750,7 +35750,7 @@ angular.module('app').controller('CategoriesController', ['$scope', '$http', 'Ca
     return $http.get("https://toysi.com.ua/feed-products-residue.php", {
         transformResponse: function transformResponse(cnv) {
             var x2js = new X2JS();
-            return x2js.xml_str2json(cnv);
+            return x2js.xml2js(cnv);
         }
     }).then(function (response) {
         console.log(typeof response === 'undefined' ? 'undefined' : _typeof(response));
