@@ -1,4 +1,4 @@
-angular.module('app').controller('PayController', ['$scope', '$window', 'BucketService', 'MainService',
+angular.module('app').controller('PayController', ['$scope', '$window', 'BucketService',
     function ($scope, $window, BucketService) {
 
         $scope.storeData = BucketService.getProducts();

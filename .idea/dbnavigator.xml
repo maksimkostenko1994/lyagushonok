@@ -27,11 +27,16 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="87f615b6-3991-4576-9df6-45db62b20201">
+      <console name="Connection" type="STANDARD"><![CDATA[insert into staffs values (3,'Kitchen','BA-DC','kitchen',200,'kitchen', 3)]]></console>
       <console name="Connection 1" type="STANDARD"><![CDATA[/*insert into pictures(url) values ('/app/pictures/data/kitchen-1.jpg');*/
 insert into staffs(name,key,price,category,description,picture_id) values ('РљСѓС…РЅСЏ', '008-33', 914.00,'РљСѓС…РЅС–', '92*69*33СЃРј', 3);]]></console>
     </connection>
   </component>
+  <component name="DBNavigator.Project.DatabaseSessionManager">
+    <connection id="87f615b6-3991-4576-9df6-45db62b20201" />
+  </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-list connection-id="87f615b6-3991-4576-9df6-45db62b20201" dataset="public.users" active-filter-id="EMPTY_FILTER" />
     <filter-list connection-id="87f615b6-3991-4576-9df6-45db62b20201" dataset="public.staffs" active-filter-id="EMPTY_FILTER" />
     <filter-list connection-id="87f615b6-3991-4576-9df6-45db62b20201" dataset="public.pictures" active-filter-id="EMPTY_FILTER" />
     <filter-list connection-id="87f615b6-3991-4576-9df6-45db62b20201" dataset="public.v_staffs" active-filter-id="" />
@@ -42,10 +47,10 @@ insert into staffs(name,key,price,category,description,picture_id) values ('Рљ
     </last-used-providers>
   </component>
   <component name="DBNavigator.Project.FileConnectionMappingManager">
-    <mapping file-url="file://$PROJECT_DIR$/postgres/views/staffs.sql" connection-id="87f615b6-3991-4576-9df6-45db62b20201" current-schema="public" />
-    <mapping file-url="file://$PROJECT_DIR$/postgres/tables/staffs.sql" connection-id="87f615b6-3991-4576-9df6-45db62b20201" current-schema="public" />
-    <mapping file-url="file://$PROJECT_DIR$/mysql/create.sql" connection-id="c3b6e217-db31-4f26-a800-f50492a9c7c1" current-schema="frogdb" />
-    <mapping file-url="file://$PROJECT_DIR$/postgres/tables/pictures.sql" connection-id="87f615b6-3991-4576-9df6-45db62b20201" current-schema="public" />
+    <mapping file-url="file://$PROJECT_DIR$/postgres/tables/pictures.sql" connection-id="87f615b6-3991-4576-9df6-45db62b20201" session-id="MAIN" current-schema="public" />
+    <mapping file-url="file://$PROJECT_DIR$/postgres/tables/staffs.sql" connection-id="87f615b6-3991-4576-9df6-45db62b20201" session-id="MAIN" current-schema="public" />
+    <mapping file-url="file://$PROJECT_DIR$/mysql/create.sql" connection-id="c3b6e217-db31-4f26-a800-f50492a9c7c1" session-id="MAIN" current-schema="frogdb" />
+    <mapping file-url="file://$PROJECT_DIR$/postgres/views/staffs.sql" connection-id="87f615b6-3991-4576-9df6-45db62b20201" session-id="MAIN" current-schema="public" />
   </component>
   <component name="DBNavigator.Project.MethodExecutionManager">
     <method-browser />
@@ -72,7 +77,7 @@ insert into staffs(name,key,price,category,description,picture_id) values ('Рљ
     <connections>
       <connection id="87f615b6-3991-4576-9df6-45db62b20201" active="true">
         <database>
-          <name value="Connection 1" />
+          <name value="Connection" />
           <description value="" />
           <database-type value="POSTGRES" />
           <config-type value="BASIC" />
@@ -83,7 +88,7 @@ insert into staffs(name,key,price,category,description,picture_id) values ('Рљ
           <url-type value="DATABASE" />
           <host value="localhost" />
           <port value="5432" />
-          <database value="frog" />
+          <database value="test_db" />
           <os-authentication value="false" />
           <empty-password value="false" />
           <user value="postgres" />
@@ -104,6 +109,7 @@ insert into staffs(name,key,price,category,description,picture_id) values ('Рљ
         </ssh-settings>
         <details>
           <charset value="UTF-8" />
+          <session-management value="true" />
           <ddl-file-binding value="true" />
           <database-logging value="false" />
           <connect-automatically value="true" />
@@ -111,6 +117,7 @@ insert into staffs(name,key,price,category,description,picture_id) values ('Рљ
           <restore-workspace-deep value="true" />
           <environment-type value="default" />
           <idle-time-to-disconnect value="30" />
+          <idle-time-to-disconnect-pool value="5" />
           <password-expiry-time value="10" />
           <max-connection-pool-size value="7" />
           <alternative-statement-delimiter value="" />
@@ -292,6 +299,8 @@ insert into staffs(name,key,price,category,description,picture_id) values ('Рљ
       <general>
         <show-object-navigation-gutter value="false" />
         <show-spec-declaration-navigation-gutter value="true" />
+        <enable-spellchecking value="true" />
+        <enable-reference-spellchecking value="false" />
       </general>
       <confirmations>
         <save-changes value="false" />
@@ -461,7 +470,6 @@ insert into staffs(name,key,price,category,description,picture_id) values ('Рљ
         <debug-execution-timeout value="600" />
         <focus-result value="false" />
         <prompt-execution value="false" />
-        <target-connection value="ASK" />
       </statement-execution>
       <script-execution>
         <command-line-interfaces>

@@ -1,0 +1,38 @@
+<!--<link rel="stylesheet" type="text/css" href="/app/modules/toys/toys.css">-->
+
+
+<!--<div class="row">-->
+    <!--<div class="col-md-6 good-block" ng-repeat="toy in main|filter: text">-->
+        <!--<div class="row" align="center">-->
+            <!--<img ng-src="{{toy.pictures[$index].url}}" class="image" align="middle" height="170px"-->
+                 <!--width="250px">-->
+        <!--</div>-->
+        <!--<div class="row text-padding">{{toy.name}}</div>-->
+        <!--<div class="row text-padding">{{toy.key}}</div>-->
+        <!--<div class="row text-padding">{{toy.price}}</div>-->
+        <!--<div class="row text-padding">{{toy.category}}</div>-->
+        <!--<div class="row text-padding">{{toy.description}}</div>-->
+        <!--<div class="row text-padding">-->
+            <!--<button class="button" ng-click="addToy(toy.name, toy.price, toy.pictures[$index].url, toy.key, toy.description, toy.category)">Купить</button>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<div class="toy row">
+    <div class="col-md-4 col-lg-4" ng-repeat="toy in main|filter: text">
+        <div ng-repeat="t in toy.yml_catalog.shop.offers.offer">
+            <div class="height">
+                <div class="row" align="center">
+                    <img ng-src="{{t.picture}}" class="image" align="middle" height="85px"
+                         width="125px">
+                </div>
+                <div class="row" align="center"><b>{{t.name}}</b></div>
+                <div class="row" align="center"><b>{{t.vendor_code}}</b></div>
+                <div class="row"><h6><b>Описание:</b>{{t.description}}</h6></div>
+                <div class="row"><h5><b>{{t.price}} {{t.currencyId}}</b></h5></div>
+            </div>
+            <a ng-click="addToy(toy.name, toy.price, toy.pictures[$index].url, toy.key, toy.description, toy.category)">
+                <div class="button" align="center">Купить</div>
+            </a>
+        </div>
+    </div>
+</div>

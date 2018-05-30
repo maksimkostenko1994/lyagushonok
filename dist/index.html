@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Лягушонок - интернет-магазин детских игрушек</title>
+    <link rel="shortcut icon" href="/dist/img/favicon.png" type="image/png">
+
+<link href="/dist/style.css" rel="stylesheet"></head>
+<body>
+<div class="container">
+    <header class="row border">
+        <div class="head col-lg-8">
+            <div class="img">
+                <img src="/dist/img/111.jpg" height="290px" width="100%">
+            </div>
+        </div>
+        <div class="head col-lg-4">
+            <div class="contact" align="center">
+                <h4>Интернет-магазин детских товаров "Лягушоночек"</h4>
+                <ul>
+                    <li><b>+38 (063) 424 - 84 - 45 viber</b></li>
+                    <li><b>+38 (063) 645 - 77 - 33</b></li>
+                    <li><b><i>liygushonok@ukr.net</i></b></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+</div>
+
+<div class="container">
+    <div class="content row">
+        <div class="col-lg-3 col-md-3">
+            <div ng-controller="MenuController" ng-include="'/modules/menu/template.html'"></div>
+        </div>
+        <div class="col-lg-7 col-md-7">
+            <div class="row margin">
+                <a href="#!/main">
+                    <div class="col-lg-2 col-md-2 nav-button nav-active" id="main">
+                        <span><b>Главная</b></span>
+                    </div>
+                </a>
+                <a href="#!/about">
+                    <div class="col-lg-2 col-md-2 nav-button" id="about">
+                        <span><b>О нас</b></span>
+                    </div>
+                </a>
+                <a href="#!/shares">
+                    <div class="col-lg-3 col-md-3 nav-button" id="shares">
+                        <span><b>Акции и скидки</b></span>
+                    </div>
+                </a>
+                <a href="#!/payment">
+                    <div class="col-lg-3 col-md-3 nav-button" id="payment">
+                        <span><b>Оплата</b></span>
+                    </div>
+                </a>
+                <a href="#!/articles">
+                    <div class="col-lg-2 col-md-2 nav-button" id="articles">
+                        <span><b>Статьи</b></span>
+                    </div>
+                </a>
+            </div>
+            <div class="row margin">
+                <div class="col-lg-12 col-md-12 info">
+                    <ng-view>
+                    </ng-view>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-lg-2 col-md-2">
+            <div ng-controller="BucketController" ng-include="'/modules/bucket/template.html'"></div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/dist/index.js"></script></body>
+</html>

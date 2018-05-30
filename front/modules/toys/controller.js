@@ -1,11 +1,17 @@
 /**
  * Created by Maksim on 28.02.2017.
  */
-angular.module('app').controller('ToysController', ['$route','$scope', 'MainService', 'BucketService',
-    function ($route,$scope, MainService, BucketService) {
-        $scope.toys = MainService.query();
-        $scope.addToy = function (name, price, img, key, description, category) {
-            BucketService.addProduct(name, price, img, key, description, category);
-        };
-    }
-]);
+angular.module('app').controller('ToysController', ['$scope', '$http', '$window', function ($scope, $http) {
+    $http.get("https://toysi.com.ua/feed-products-residue.php",
+        {
+            transformResponse: function (cnv) {
+                let x2js = new X2JS();
+                return x2js.xml_str2json(cnv);
+            }
+        })
+        .then(function (response) {
+            $scope.toys = response;
+        });
+}]);
+
+
