@@ -16,7 +16,7 @@
         <ul type="none" ng-repeat="t in toy.yml_catalog.shop.categories.category">
             <li>
                 <h4>
-                    <a ng-click="category(t.__text)" ng-show="t._parentId==null">{{t.__text}}</a>
+                    <a ng-click="category(t._id)" ng-show="t._parentId==null">{{t.__text}}</a>
                 </h4>
             </li>
         </ul>

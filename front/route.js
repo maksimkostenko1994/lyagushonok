@@ -11,8 +11,7 @@ angular.module('app').config(['$routeProvider', '$locationProvider', function ($
         .when('/toys', {templateUrl: './modules/toys/template.html', controller: 'ToysController'})
         .when('/category/:category', {templateUrl: './modules/categories/template.html', controller: 'CategoriesController'})
         .when('/search/:text', {templateUrl: './modules/find/template.html', controller: 'FindController'})
-        .when('/pay', {templateUrl: './modules/pay/template.html', controller: 'PayController'})
-        .otherwise('/main');
+        .when('/pay', {templateUrl: './modules/pay/template.html', controller: 'PayController'});
     $locationProvider.html5Mode({enable: true, requireBase: false}).hashPrefix('!');
-    window.location = '#!/main';
+    //window.location = '#!/main';
 }]);

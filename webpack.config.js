@@ -64,9 +64,6 @@ module.exports = {
         }),
         new webpack.HotModuleReplacementPlugin(),
         new CopyPlugin([{
-            from: './modules/bucket/template.html',
-            to: './modules/bucket/template.html'
-        }, {
             from: './modules/menu/template.html',
             to: './modules/menu/template.html'
         }]),

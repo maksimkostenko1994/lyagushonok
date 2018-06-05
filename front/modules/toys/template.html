@@ -1,19 +1,47 @@
-<div class="toy row">
-    <div class="col-md-4 col-lg-4" ng-repeat="toy in toys">
-        <div ng-repeat="t in toy.yml_catalog.shop.offers.offer">
-            <div class="height">
+<div class="row" ng-init="limit=12">
+    <div ng-repeat="toy in toys">
+        <div class="col-md-4 col-lg-4" ng-repeat="t in toy.yml_catalog.shop.offers.offer | limitTo : limit">
+            <div class="toy-data">
                 <div class="row" align="center">
-                    <img ng-src="{{t.picture}}" class="image" align="middle" height="85px"
-                         width="125px">
+                    <div class="img">
+                        <img ng-src="{{t.picture}}" class="image" align="middle" height="85px"
+                             width="125px">
+                    </div>
                 </div>
-                <div class="row" align="center"><b>{{t.name}}</b></div>
-                <div class="row" align="center"><b>{{t.vendor_code}}</b></div>
-                <div class="row"><h6><b>Описание:</b>{{t.description}}</h6></div>
-                <div class="row"><h5><b>{{t.price}} {{t.currencyId}}</b></h5></div>
+                <div class="row" align="center">
+                    <div class="name">
+                        <b>{{t.name}}</b>
+                    </div>
+                </div>
+                <div class="row" align="center">
+                    <div class="code">
+                        <b>Код: {{t.vendor_code}}</b>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="description">
+                        <h6><b>Описание:</b></h6>
+                        <h6 ng-bind-html="t.description"></h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="price">
+                        <h5><b>Цена: {{t.price}} {{t.currencyId}}</b></h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="add-button">
+                        <button ng-click="addToy(t.name, t.price, t.picture, t.vendor_code, t.description)">Добавить
+                        </button>
+                    </div>
+                </div>
             </div>
-            <a ng-click="addToy(toy.name, toy.price, toy.pictures[$index].url, toy.key, toy.description, toy.category)">
-                <div class="button" align="center">Купить</div>
-            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-lg-4">
+            <div class="add-limit" ng-click="limit=limit+12"><img src="/dist/img/financial-planning-cycle.png"
+                                                                  height="175px" width="175px"></div>
         </div>
     </div>
 </div>

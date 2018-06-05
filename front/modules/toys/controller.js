@@ -6,7 +6,7 @@ angular.module('app').controller('ToysController', ['$scope', '$http', '$window'
         {
             transformResponse: function (cnv) {
                 let x2js = new X2JS();
-                return x2js.xml_str2json(cnv);
+                return x2js.xml2js(cnv);
             }
         })
         .then(function (response) {

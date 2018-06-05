@@ -1,15 +1,42 @@
-<div class="row">
-    <div class="col-md-6 good-block" ng-repeat="toy in main">
-        <div class="row" align="center">
-            <img ng-src="{{toy.pictures[$index].url}}" class="image" align="middle" height="170px"
-                 width="250px">
-        </div>
-        <div class="row text-padding">{{toy.name}}</div>
-        <div class="row text-padding">{{toy.key}}</div>
-        <div class="row text-padding">{{toy.price}}</div>
-        <div class="row text-padding">{{toy.description}}</div>
-        <div class="row text-padding">
-            <button class="button" ng-click="addToy(toy.name, toy.price, toy.pictures[$index].url, toy.key, toy.description, toy.category)">Купить</button>
+<div class="row" ng-init="limit=11">
+    <div ng-repeat="toy in category_toys">
+        <div class="col-md-4 col-lg-4" ng-repeat="t in toy.yml_catalog.shop.offers.offer | limitTo : limit"
+             ng-show="t.categoryId === category">
+            <div class="category-data">
+                <div class="row" align="center">
+                    <div class="img">
+                        <img ng-src="{{t.picture}}" class="image" align="middle" height="85px"
+                             width="125px">
+                    </div>
+                </div>
+                <div class="row" align="center">
+                    <div class="name">
+                        <b>{{t.name}}</b>
+                    </div>
+                </div>
+                <div class="row" align="center">
+                    <div class="code">
+                        <b>Код: {{t.vendor_code}}</b>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="description">
+                        <h6><b>Описание:</b></h6>
+                        <h6 ng-bind-html="t.description"></h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="price">
+                        <h5><b>Цена: {{t.price}} {{t.currencyId}}</b></h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="add-button">
+                        <button ng-click="addToy(t.name, t.price, t.picture, t.vendor_code, t.description)">Добавить
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

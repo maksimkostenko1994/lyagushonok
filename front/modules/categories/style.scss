@@ -1,4 +1,4 @@
-.toy-data {
+.category-data {
   margin-top: 20px;
   padding: 5px;
   transition: background 0.2s ease-out, color 0.2s ease-out, height 0.2s ease-out, width 0.2s ease-out;
@@ -56,6 +56,31 @@
         box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
         background: linear-gradient(to bottom, #5873ff, #6390FF);
       }
+    }
+  }
+}
+
+.add-limit {
+  height: 420px;
+  padding-top: 115.5px;
+  padding-bottom: 122.5px;
+  padding-left: 30px;
+  padding-right: 60px;
+  margin: 10px;
+  &:hover {
+    background: rgba(0,0,0,0.1);
+    cursor: pointer;
+    img {
+      animation: spin 1s linear infinite;
+    }
+  }
+
+  @keyframes spin {
+    from {
+      transform:rotate(0deg);
+    }
+    to {
+      transform:rotate(360deg);
     }
   }
 }

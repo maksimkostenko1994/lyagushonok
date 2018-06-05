@@ -5508,39 +5508,47 @@ body {
   padding-right: 10px;
   border-left: 1px solid #8c9acc;
   border-right: 1px solid #8c9acc; }
-.toy {
-  margin: 0;
-  padding: 5px; }
-  .toy .height {
-    height: 200px; }
-  .toy a {
-    text-decoration: none;
-    color: #ffffff; }
-    .toy a .button {
-      cursor: pointer;
-      background: #408cda;
-      border: 1px solid #8c9acc;
-      margin-bottom: 5px; }
-      .toy a .button:hover {
-        background: #73EE71; }
-.bucket .title {
-  border: 1px solid #8c9acc;
-  text-align: center;
-  background: #AFF8AE;
-  color: #408cda;
-  cursor: pointer; }
-
-.bucket .data {
-  background: #e0ddf3;
-  border: 1px solid #8c9acc; }
-
-.bucket .bucket-button {
-  background: #AFF8AE;
-  border: 1px solid #8c9acc;
-  color: #408cda; }
-  .bucket .bucket-button:hover {
-    background: #408cda;
-    color: black; }
+.toy-data {
+  margin-top: 20px;
+  padding: 5px;
+  transition: background 0.2s ease-out, color 0.2s ease-out, height 0.2s ease-out, width 0.2s ease-out; }
+  .toy-data:hover {
+    background: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    color: white; }
+    .toy-data:hover img {
+      height: 100px;
+      width: 150px; }
+  .toy-data div .img {
+    padding-top: 10px;
+    height: 110px; }
+  .toy-data div .name {
+    text-align: center;
+    padding: 15px;
+    height: 75px; }
+  .toy-data div .code {
+    text-align: left;
+    padding: 15px; }
+  .toy-data div .description {
+    text-align: justify;
+    overflow: hidden;
+    padding: 15px;
+    height: 100px;
+    text-overflow: ellipsis; }
+  .toy-data div .price {
+    padding: 15px; }
+  .toy-data div .add-button button {
+    margin-left: 95px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+    border: none;
+    background: linear-gradient(to bottom, #6390FF, #5873ff);
+    border-radius: 5px 5px 5px 5px;
+    height: 30px; }
+    .toy-data div .add-button button:hover {
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+      background: linear-gradient(to bottom, #5873ff, #6390FF); }
 .find {
   display: flex;
   flex-direction: row; }
@@ -5576,6 +5584,47 @@ body {
       .category a .title:hover {
         background: #408cda;
         color: black; }
+.category-data {
+  margin-top: 20px;
+  padding: 5px;
+  transition: background 0.2s ease-out, color 0.2s ease-out, height 0.2s ease-out, width 0.2s ease-out; }
+  .category-data:hover {
+    background: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    color: white; }
+    .category-data:hover img {
+      height: 100px;
+      width: 150px; }
+  .category-data div .img {
+    padding-top: 10px;
+    height: 110px; }
+  .category-data div .name {
+    text-align: center;
+    padding: 15px;
+    height: 75px; }
+  .category-data div .code {
+    text-align: left;
+    padding: 15px; }
+  .category-data div .description {
+    text-align: justify;
+    overflow: hidden;
+    padding: 15px;
+    height: 100px;
+    text-overflow: ellipsis; }
+  .category-data div .price {
+    padding: 15px; }
+  .category-data div .add-button button {
+    margin-left: 95px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+    border: none;
+    background: linear-gradient(to bottom, #6390FF, #5873ff);
+    border-radius: 5px 5px 5px 5px;
+    height: 30px; }
+    .category-data div .add-button button:hover {
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+      background: linear-gradient(to bottom, #5873ff, #6390FF); }
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.

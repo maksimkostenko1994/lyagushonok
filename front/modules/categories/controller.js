@@ -1,26 +1,21 @@
-angular.module('app').controller('CategoriesController', ['$scope', '$http', 'CategoriesService', 'BucketService',
-    function ($scope, $http, CategoriesService, BucketService) {
-        let category = CategoriesService.getCategory();
-        return $http.get("https://toysi.com.ua/feed-products-residue.php",
+angular.module('app').controller('CategoriesController', ['$scope', '$http', 'CategoriesService', 'PayService',
+    function ($scope, $http, CategoriesService, PayService) {
+        $scope.category = CategoriesService.getCategory();
+        $http.get("https://toysi.com.ua/feed-products-residue.php",
             {
                 transformResponse: function (cnv) {
                     let x2js = new X2JS();
                     return x2js.xml2js(cnv);
                 }
             })
-            .then(function (response) {
-                console.log(typeof response);
-                return response.$promise.then(function (items) {
-                    $scope.main = items.filter(function (i) {
-                        return i.category === category;
-                    });
-                });
+            .then(function (res) {
+                console.log(res.data)
+                return $scope.category_toys = res;
             });
 
 
-        $scope.addToy = function (name, price, img, key, description, category) {
-            BucketService.addProduct(name, price, img, key, description, category);
-        };
+        $scope.addToy = function (name, price, img, key, description) {
+            PayService.setProduct(name, price, img, key, description);
+        }
     }
-])
-;
+]);

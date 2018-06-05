@@ -1,16 +1,16 @@
-angular.module('app').controller('PayController', ['$scope', '$window', 'BucketService',
-    function ($scope, $window, BucketService) {
+angular.module('app').controller('PayController', ['$scope', '$window', 'PayService',
+    function ($scope, $window, PayService) {
 
-        $scope.storeData = BucketService.getProducts();
+        $scope.storeData = PayService.getProducts();
 
         $scope.clear = function () {
-            BucketService.clearProduct();
-            $scope.storeData = BucketService.getProducts();
+            PayService.clearProduct();
+            $scope.storeData = PayService.getProducts();
         };
 
         $scope.remove = function (item) {
-            BucketService.removeProduct(item);
-            $scope.storeData = BucketService.getProducts();
+            PayService.removeProduct(item);
+            $scope.storeData = PayService.getProducts();
         };
     }
 ]);

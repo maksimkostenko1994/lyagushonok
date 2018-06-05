@@ -9,6 +9,7 @@ import 'jquery';
 import 'x2js'
 
 import 'angular'
+import 'angular-sanitize'
 import 'angular-route'
 import 'angular-filter'
 import './xml2json'
@@ -16,21 +17,21 @@ import './xml2json'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/style.css';
+import '../style/style';
 import './modules/toys/style.scss';
-import './modules/bucket/style.scss';
 import './modules/menu/style.scss'
+import './modules/categories/style.scss'
 
 import './main'
 import './route.js';
 import './modules/menu/controller.js';
 import './modules/categories/services.js';
 import './modules/find/service.js';
-import './modules/bucket/service.js';
-import './modules/bucket/controller.js';
 import './modules/toys/controller.js';
 import './modules/shares/controller.js';
 import './modules/payment/controller.js';
 import './modules/pay/controller.js';
+import './modules/pay/service.js';
 import './modules/find/controller.js';
 import './modules/categories/controller.js';
 import './modules/articles/controller.js';
@@ -53,3 +54,4 @@ import '../pictures/search-icon.png'
 import '../pictures/data/1.jpg'
 import '../pictures/data/2.jpg'
 import '../pictures/data/kitchen-1.jpg'
+import '../pictures/financial-planning-cycle.png'

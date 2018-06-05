@@ -12,6 +12,7 @@
     "angular-filter": "^0.5.17",
     "angular-resource": "^1.6.8",
     "angular-route": "^1.6.8",
+    "angular-sanitize": "^1.5.11",
     "angular-xml": "^2.2.2",
     "angularjs-template-loader": "^0.1.1",
     "babel-core": "^6.26.0",
