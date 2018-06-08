@@ -2,36 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a271edf1-a0fa-4184-bee2-d68121492ed2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/front/modules/categories/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/modules/pay/service.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/modules/pay/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/financial-planning-cycle.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/financial-planning-cycle.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/modules/bucket/template.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/modules/menu/template.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/modules/menu/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/modules/menu/template.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/modules/bucket/controller.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/modules/bucket/service.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/modules/bucket/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/modules/bucket/style.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/modules/bucket/style.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/modules/bucket/template.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/front/modules/categories/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/modules/categories/controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/modules/categories/services.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/modules/categories/services.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/modules/categories/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/modules/categories/template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/modules/find/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/modules/find/controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/modules/find/service.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/modules/find/service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/modules/find/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/modules/find/template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/modules/menu/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/modules/menu/controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/modules/menu/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/modules/menu/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/modules/menu/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/modules/menu/template.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/modules/pay/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/modules/pay/controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/modules/pay/service.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/modules/pay/service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/modules/pay/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/modules/pay/template.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/modules/toys/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/modules/toys/controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/modules/toys/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/modules/toys/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/modules/toys/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/modules/toys/template.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/route.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/route.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -48,20 +43,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="template.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/front/modules/toys/template.html">
+      <file leaf-file-name="controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front/modules/pay/controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="42" column="33" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
+            <state relative-caret-position="289">
+              <caret line="17" column="62" lean-forward="true" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/front/modules/categories/style.scss">
+      <file leaf-file-name="template.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/front/modules/pay/template.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="67" column="22" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
+            <state>
+              <caret selection-end-line="54" selection-end-column="6" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -108,10 +107,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/front/modules/toys/toys.css" />
-        <option value="$PROJECT_DIR$/front/modules/menu/style.css" />
-        <option value="$PROJECT_DIR$/style/style.js" />
-        <option value="$PROJECT_DIR$/style/style.css" />
         <option value="$PROJECT_DIR$/front/modules/toys/style.css" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.scss" />
         <option value="$PROJECT_DIR$/front/modules/main/style.scss" />
@@ -134,31 +129,35 @@
         <option value="[Connection]consoles\Connection" />
         <option value="$PROJECT_DIR$/api/app.js" />
         <option value="$PROJECT_DIR$/style/style.scss" />
-        <option value="$PROJECT_DIR$/front/modules/menu/style.scss" />
-        <option value="$PROJECT_DIR$/front/modules/find/template.html" />
         <option value="$PROJECT_DIR$/front/modules/toys/service.js" />
-        <option value="$PROJECT_DIR$/front/modules/find/controller.js" />
         <option value="$PROJECT_DIR$/front/modules/bucket/controller.js" />
         <option value="$PROJECT_DIR$/front/modules/main/controller.js" />
         <option value="$PROJECT_DIR$/front/modules/bucket/template.html" />
         <option value="$PROJECT_DIR$/front/xml2json.js" />
-        <option value="$PROJECT_DIR$/front/modules/menu/template.html" />
-        <option value="$PROJECT_DIR$/front/modules/toys/controller.js" />
         <option value="$PROJECT_DIR$/front/modules/bucket/service.js" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/front/index.html" />
-        <option value="$PROJECT_DIR$/front/modules/pay/service.js" />
         <option value="$PROJECT_DIR$/front/route.js" />
-        <option value="$PROJECT_DIR$/front/modules/pay/controller.js" />
-        <option value="$PROJECT_DIR$/front/modules/menu/controller.js" />
-        <option value="$PROJECT_DIR$/front/modules/categories/services.js" />
         <option value="$PROJECT_DIR$/front/main.js" />
-        <option value="$PROJECT_DIR$/front/modules/categories/controller.js" />
         <option value="$PROJECT_DIR$/front/modules/toys/style.scss" />
-        <option value="$PROJECT_DIR$/front/modules/categories/template.html" />
-        <option value="$PROJECT_DIR$/front/index.js" />
-        <option value="$PROJECT_DIR$/front/modules/toys/template.html" />
         <option value="$PROJECT_DIR$/front/modules/categories/style.scss" />
+        <option value="$PROJECT_DIR$/front/modules/menu/style.scss" />
+        <option value="$PROJECT_DIR$/front/style.scss" />
+        <option value="$PROJECT_DIR$/front/modules/categories/services.js" />
+        <option value="$PROJECT_DIR$/front/modules/menu/template.html" />
+        <option value="$PROJECT_DIR$/front/index.js" />
+        <option value="$PROJECT_DIR$/front/modules/pay/style.scss" />
+        <option value="$PROJECT_DIR$/front/modules/toys/controller.js" />
+        <option value="$PROJECT_DIR$/front/modules/toys/template.html" />
+        <option value="$PROJECT_DIR$/front/modules/pay/service.js" />
+        <option value="$PROJECT_DIR$/front/modules/menu/controller.js" />
+        <option value="$PROJECT_DIR$/front/modules/find/template.html" />
+        <option value="$PROJECT_DIR$/front/modules/find/controller.js" />
+        <option value="$PROJECT_DIR$/front/modules/find/service.js" />
+        <option value="$PROJECT_DIR$/front/modules/categories/controller.js" />
+        <option value="$PROJECT_DIR$/front/modules/categories/template.html" />
+        <option value="$PROJECT_DIR$/front/modules/pay/controller.js" />
+        <option value="$PROJECT_DIR$/front/modules/pay/template.html" />
       </list>
     </option>
   </component>
@@ -212,7 +211,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -223,17 +221,6 @@
             <path>
               <item name="lyagushonok" type="b2602c69:ProjectViewProjectNode" />
               <item name="lyagushonok" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lyagushonok" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lyagushonok" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lyagushonok" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lyagushonok" type="462c0819:PsiDirectoryNode" />
               <item name="front" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -241,20 +228,6 @@
               <item name="lyagushonok" type="462c0819:PsiDirectoryNode" />
               <item name="front" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lyagushonok" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lyagushonok" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="categories" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lyagushonok" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lyagushonok" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="menu" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lyagushonok" type="b2602c69:ProjectViewProjectNode" />
@@ -263,22 +236,11 @@
               <item name="modules" type="462c0819:PsiDirectoryNode" />
               <item name="pay" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="lyagushonok" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lyagushonok" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="toys" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lyagushonok" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lyagushonok" type="462c0819:PsiDirectoryNode" />
-              <item name="pictures" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -303,15 +265,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Робота\lyagushonok\dist" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Робота\lyagushonok\front\modules\menu" />
       <recent name="D:\Робота\lyagushonok\front" />
       <recent name="D:\Studying\Lyagushonok\front\modules\storage" />
       <recent name="D:\Studying\Lyagushonok\front" />
       <recent name="D:\Studying\Lyagushonok\front\modules\toys" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Робота\lyagushonok\dist" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -580,14 +542,24 @@
       <workItem from="1527685303674" duration="586000" />
       <workItem from="1528065378533" duration="14470000" />
       <workItem from="1528084230990" duration="13528000" />
+      <workItem from="1528236661336" duration="2332000" />
+      <workItem from="1528239408481" duration="9954000" />
+      <workItem from="1528274891296" duration="3267000" />
+      <workItem from="1528279600073" duration="1518000" />
+      <workItem from="1528282080864" duration="418000" />
+      <workItem from="1528283827088" duration="24870000" />
+      <workItem from="1528330907686" duration="2094000" />
+      <workItem from="1528424956562" duration="5540000" />
+      <workItem from="1528460750833" duration="2814000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="521026000" />
+    <option name="totallyTimeSpent" value="573833000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info id="DB Browser" order="4" weight="0.17633928" />
@@ -596,8 +568,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49702382" weight="0.32843137" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4888393" visible="true" weight="0.339934" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20833333" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4888393" visible="true" weight="0.24092409" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20833333" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -611,26 +583,26 @@
       <window_info anchor="bottom" id="Find" order="1" weight="0.32838285" />
     </layout>
     <layout-to-restore>
+      <window_info anchor="bottom" id="DB Execution Console" order="8" weight="0.32838285" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49702382" weight="0.32843137" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="DB Execution Console" order="8" weight="0.32838285" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info id="DB Browser" order="4" weight="0.17633928" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20833333" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49702382" weight="0.32843137" />
+      <window_info id="DB Browser" order="4" weight="0.17633928" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.48214287" visible="true" weight="0.31188118" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5029762" side_tool="true" weight="0.32843137" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32838285" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20833333" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32838285" />
+      <window_info id="Favorites" order="3" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -640,42 +612,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/Studying/Books/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1224" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Task/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Studying/Books/front/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="49" lean-forward="true" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="32" column="46" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/template.html" />
-    <entry file="file://$PROJECT_DIR$/dist/modules/main/template.html" />
-    <entry file="file://$PROJECT_DIR$/dist/modules/menu/template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/modules/pay/template.html" />
     <entry file="file://$PROJECT_DIR$/dist/modules/find/template.html" />
     <entry file="file://$PROJECT_DIR$/dist/index.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -705,13 +641,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/front/modules/toys/service.js" />
-    <entry file="file://$PROJECT_DIR$/front/modules/find/template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="13" column="70" selection-start-line="13" selection-start-column="70" selection-end-line="13" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/front/modules/main/template.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -733,35 +662,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/modules/find/controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/modules/main/style.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/style/style.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/modules/menu/template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/modules/menu/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="48" column="28" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/front/modules/bucket/service.js" />
     <entry file="file://$PROJECT_DIR$/front/modules/bucket/controller.js" />
@@ -780,41 +685,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/modules/toys/controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/front/route.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/modules/pay/service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="26" lean-forward="true" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../maksimkostenko1994.github.io/front/modules/user/actions/groups/service.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/modules/categories/services.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="40" column="30" lean-forward="true" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -825,62 +699,179 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/modules/menu/controller.js">
+    <entry file="file://$PROJECT_DIR$/front/modules/categories/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
+        <state relative-caret-position="1139">
+          <caret line="67" column="22" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/modules/pay/controller.js">
+    <entry file="file://$PROJECT_DIR$/front/modules/main/style.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/modules/menu/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="301">
+          <caret line="68" column="37" selection-start-line="68" selection-start-column="37" selection-end-line="68" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/modules/categories/controller.js">
+    <entry file="file://$PROJECT_DIR$/../maksimkostenko1994.github.io/front/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../maksimkostenko1994.github.io/front/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+        <state relative-caret-position="170">
+          <caret line="88" column="72" lean-forward="true" selection-start-line="88" selection-start-column="72" selection-end-line="88" selection-end-column="72" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/modules/toys/style.scss">
+    <entry file="file://$PROJECT_DIR$/../maksimkostenko1994.github.io/front/modules/user/actions/groups/template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        <state relative-caret-position="-102" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../maksimkostenko1994.github.io/front/modules/user/actions/groups/controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="56" lean-forward="true" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../maksimkostenko1994.github.io/front/modules/user/actions/groups/service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="55" lean-forward="true" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/modules/menu/template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="17" column="70" lean-forward="true" selection-start-line="17" selection-start-column="70" selection-end-line="17" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/modules/categories/services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/front/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="56" column="49" selection-start-line="56" selection-start-column="49" selection-end-line="56" selection-end-column="49" />
-          <folding>
-            <element signature="e#89#105#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="323">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/modules/categories/template.html">
+    <entry file="file://$PROJECT_DIR$/front/modules/menu/controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-481">
-          <caret column="35" selection-start-column="35" selection-end-column="35" />
+        <state relative-caret-position="255">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/modules/find/service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/modules/toys/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/modules/pay/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/modules/pay/service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/front/modules/toys/template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="42" column="33" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
+        <state relative-caret-position="153">
+          <caret line="33" column="115" lean-forward="true" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="115" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/modules/categories/style.scss">
+    <entry file="file://$PROJECT_DIR$/front/modules/categories/template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="67" column="22" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
+        <state relative-caret-position="119">
+          <caret line="28" column="22" lean-forward="true" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/modules/categories/controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="23" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/modules/toys/controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="17" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/modules/find/template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="34" column="36" lean-forward="true" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/modules/find/controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/modules/pay/controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="62" lean-forward="true" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/modules/pay/template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="54" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

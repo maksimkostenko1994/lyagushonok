@@ -16,11 +16,13 @@ import './xml2json'
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './style.scss'
 import '../style/style.css';
 import '../style/style';
 import './modules/toys/style.scss';
 import './modules/menu/style.scss'
 import './modules/categories/style.scss'
+import './modules/pay/style.scss'
 
 import './main'
 import './route.js';

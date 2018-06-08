@@ -1,7 +1,7 @@
 angular.module('app').service('CategoriesService',
     function () {
-        let setCategory = function (category) {
-            return localStorage.setItem('category', JSON.stringify(category));
+        let setCategory = function (id) {
+            return localStorage.setItem('category', JSON.stringify(id));
         };
 
         let getCategory = function () {

@@ -1,12 +1,12 @@
 angular.module('app').service('FindService',
     function () {
-        var text = {};
-        var setText = function (search) {
-            text = search;
+
+        let setText = function (search) {
+            return localStorage.setItem('find', search);
         };
 
-        var getText = function () {
-            return text;
+        let getText = function () {
+            return localStorage.getItem('find');
         };
 
         return {

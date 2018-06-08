@@ -1,11 +1,10 @@
-
-<div id="myModal" class="modal fade pay" role="dialog" style="opacity: 1; display: block;">
+<div id="myModal" class="modal" role="dialog" style="opacity: 1; display: block;">
     <div class="modal-dialog">
 
         <div class="modal-content pay window">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Оплата</h4>
+                <a class="close" data-dismiss="modal" href="#!/toys">&times;</a>
+                <h4 class="modal-title">Оплата<span style="color: black" class="glyphicon glyphicon-menu-right"></span></h4>
             </div>
             <div class="modal-body">
                 <div class="row">
@@ -15,21 +14,38 @@
                                                        height="150px"
                                                        width="200px"></div>
                             <div class="col-lg-6 col-md-6">
-                                <div class="row text-padding">{{store.name}}</div>
-                                <div class="row text-padding">{{store.key}}</div>
-                                <div class="row text-padding">{{store.price}}</div>
-                                <div class="row text-padding">{{store.category}}</div>
-                                <div class="row text-padding">{{store.description}}</div>
+                                <div class="row text-padding"><h4><b>{{store.name}}</b></h4></div>
+                                <div class="row text-padding"><b>Артикул:</b>: <i>{{store.code}}</i></div>
+                                <div class="row text-padding"><b>Цена:</b> <i>{{store.price}} {{store.currency}}</i>
+                                </div>
+                                <div class="row text-padding"><b>Описание:</b><i ng-bind-html="store.description"></i>
+                                </div>
+                                <div class="row">
+                                    <button ng-click="counterDown($index)"><span
+                                            class="glyphicon glyphicon-chevron-left"></span></button>
+                                    {{store.index}}
+                                    <button ng-click="counterUp($index)"><span
+                                            class="glyphicon glyphicon-chevron-right"></span></button>
+                                    <b>{{store.index * store.price | number: 2}} {{store.currency}}</b>
+                                </div>
                             </div>
-                            <a ng-click="remove(store[$index])">
+                            <a ng-click="remove(store)">
                                 <div class="col-lg-1"><span class="glyphicon glyphicon-remove"></span></div>
                             </a>
                         </div>
                         <hr>
                     </div>
                 </div>
+                <div class="row" align="right">
+                    <div class="col-lg-12">
+                        <b>Итого: {{total() | number: 2}} UAH</b>
+                    </div>
+                    <hr>
+                </div>
             </div>
             <div align="right">
+                <a href="#!/toys" type="button" ng-click="clear()" class="btn btn-default"
+                   data-dismiss="modal">Очистить</a>
                 <a href="#!/toys" type="button" class="btn btn-default" data-dismiss="modal">Далее</a>
                 <a href="#!/toys" type="button" class="btn btn-default" data-dismiss="modal">Закрить</a>
             </div>

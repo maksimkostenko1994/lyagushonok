@@ -5445,6 +5445,9 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 5px;
+  margin-bottom: 5px; }
 body {
   background-image: url("https://re-space.ru/wp-content/uploads/2014/09/kids-21-2-300x300.jpg");
   background-size: 10%;
@@ -5571,19 +5574,28 @@ body {
   border: 1px solid #8c9acc;
   background: #AFF8AE;
   margin-top: 5px; }
-  .category a {
-    color: #408cda;
-    cursor: pointer; }
-    .category a:hover {
-      text-decoration: none; }
-    .category a .title {
-      text-align: center;
-      vertical-align: middle;
-      border-bottom: 1px solid #ffffff;
-      padding: 1px; }
-      .category a .title:hover {
-        background: #408cda;
-        color: black; }
+  .category .title {
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid #ffffff;
+    padding: 10px; }
+    .category .title:hover {
+      background: #408cda;
+      color: black; }
+  .category li {
+    margin-top: 5px;
+    margin-right: 40px;
+    padding: 1px 0 1px 10px; }
+    .category li:hover {
+      background: rgba(0, 0, 0, 0.1);
+      cursor: pointer; }
+    .category li:focus {
+      background: rgba(0, 0, 0, 0.1); }
+    .category li a {
+      color: #408cda;
+      cursor: pointer; }
+      .category li a:hover {
+        text-decoration: none; }
 .category-data {
   margin-top: 20px;
   padding: 5px;
@@ -5625,6 +5637,30 @@ body {
     .category-data div .add-button button:hover {
       box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
       background: linear-gradient(to bottom, #5873ff, #6390FF); }
+
+.add-limit {
+  height: 420px;
+  padding-top: 115.5px;
+  padding-bottom: 122.5px;
+  padding-left: 30px;
+  padding-right: 60px;
+  margin: 10px; }
+  .add-limit:hover {
+    background: rgba(0, 0, 0, 0.1);
+    cursor: pointer; }
+    .add-limit:hover img {
+      animation: spin 1s linear infinite; }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+.modal {
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+  overflow: auto; }
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.

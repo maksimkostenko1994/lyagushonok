@@ -11,12 +11,11 @@
             <h3><b><span>Каталог товаров</span></b></h3>
         </div>
     </a>
-    <div ng-repeat="toy in toys">
-
-        <ul type="none" ng-repeat="t in toy.yml_catalog.shop.categories.category">
-            <li>
+    <div>
+        <ul type="none">
+            <li ng-repeat="toy in toys">
                 <h4>
-                    <a ng-click="category(t._id)" ng-show="t._parentId==null">{{t.__text}}</a>
+                    <a ng-click="category(toy._id)">{{toy.__text}}</a>
                 </h4>
             </li>
         </ul>

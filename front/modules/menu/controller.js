@@ -1,4 +1,4 @@
-angular.module('app').controller('MenuController', ['$scope', '$window', '$http', 'CategoriesService','FindService',
+angular.module('app').controller('MenuController', ['$scope', '$window', '$http', 'CategoriesService', 'FindService',
     function ($scope, $window, $http, CategoriesService, FindService) {
         $http.get("https://toysi.com.ua/feed-products-residue.php",
             {
@@ -7,18 +7,25 @@ angular.module('app').controller('MenuController', ['$scope', '$window', '$http'
                     return x2js.xml2js(cnv);
                 }
             })
-            .then(function (response) {
-                $scope.toys = response;
+            .then(function (res) {
+                let category_data = [];
+                for (let id of res.data.yml_catalog.shop.categories.category) {
+                    if (id._parentId === undefined) {
+                        category_data.push(id);
+                    }
+                }
+                return $scope.toys = category_data;
+
             });
         $scope.item = '';
-        $scope.category = function (category) {
-            CategoriesService.setCategory(category);
-            $window.location.href = '/#!/category/' + category;
+        $scope.category = function (id) {
+            CategoriesService.setCategory(id);
+            $window.location.href = '/#!/category/' + id;
         };
 
         $scope.finding = function (item) {
             FindService.setText(item);
-            $window.location.href = '/#!/search/'+ item;
+            $window.location.href = '/#!/search/' + item;
         };
     }
 ]);
