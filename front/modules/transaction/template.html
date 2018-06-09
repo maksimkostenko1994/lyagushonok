@@ -1,0 +1,28 @@
+<div id="nextModal" class="modal" role="dialog" style="opacity: 1; display: block;">
+    <div class="modal-dialog">
+
+        <div class="modal-content pay window">
+            <div class="modal-header">
+                <a class="close" data-dismiss="modal" href="#!/toys">&times;</a>
+                <h4 class="modal-title">Оплата<span style="color: black" class="glyphicon glyphicon-menu-right"></span>Коректирование
+                    товара<span style="color: black" class="glyphicon glyphicon-menu-right"></span>Оплата товара</h4>
+            </div>
+            <div class="modal-body" align="center">
+                <form method="POST" action="https://formspree.io/kostenko.m.t@gmail.com">
+                    <input class="from-input" type="email" name="email" placeholder="Ваш email..." required>
+                    <input class="from-input" name="tel" type="text" placeholder="Введите Ваш номер телефона..."
+                           required>
+                    <textarea class="form-text-input" name="message" placeholder="Your message">{{getItems()}}</textarea>
+                    <button class="btn btn-default" type="submit">Send</button>
+                </form>
+            </div>
+            <div align="right">
+                <a href="#!/toys" type="button" ng-click="clear()" class="btn btn-default"
+                   data-dismiss="modal">Очистить</a>
+                <a href="#!/pay" type="button" class="btn btn-default" data-dismiss="modal">Назад</a>
+                <a href="#!/toys" type="button" class="btn btn-default" data-dismiss="modal">Закрить</a>
+            </div>
+        </div>
+
+    </div>
+</div>

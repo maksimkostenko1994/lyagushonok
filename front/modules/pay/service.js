@@ -30,12 +30,12 @@ angular.module('app').service('PayService',
             return localStorage.setItem('payment', JSON.stringify(product));
         };
 
+
         return {
             setProduct: setProduct,
             getProducts: getProducts,
             clearProducts: clearProducts,
             removeProduct: removeProduct
         }
-
     }
 );

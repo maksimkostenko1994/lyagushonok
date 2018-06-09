@@ -23,6 +23,7 @@ import './modules/toys/style.scss';
 import './modules/menu/style.scss'
 import './modules/categories/style.scss'
 import './modules/pay/style.scss'
+import './modules/transaction/style.scss'
 
 import './main'
 import './route.js';
@@ -38,6 +39,7 @@ import './modules/find/controller.js';
 import './modules/categories/controller.js';
 import './modules/articles/controller.js';
 import './modules/about/controller.js';
+import './modules/transaction/controller';
 import 'webpack-icons-installer/bootstrap';
 
 import '../pictures/1.jpg'

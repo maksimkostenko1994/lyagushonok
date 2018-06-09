@@ -30,5 +30,10 @@ angular.module('app').controller('PayController', ['$scope', '$window', 'PayServ
             PayService.removeProduct(item);
             $scope.storeData = PayService.getProducts();
         };
+
+        $scope.next = function () {
+            localStorage.setItem('total', JSON.stringify($scope.total()));
+            $window.location.href = '#!/pay/transaction';
+        }
     }
 ]);
