@@ -1,0 +1,30 @@
+<div class="row">
+    <div class="good-info">
+        <div class="col-lg-8 col-md-8"><img ng-src="{{goodStore.img}}"></div>
+        <div class="col-lg-4 col-md-4">
+            <div class="row">
+                <h3>{{goodStore.name}}</h3>
+            </div>
+            <div class="row">
+                <h5>{{goodStore.code}}</h5>
+            </div>
+            <div class="row">
+                <h3 class="price">{{goodStore.price}} {{goodStore.currency}}</h3>
+            </div>
+            <div class="row">
+                <div class="add-button">
+                    <button ng-click="addToy(t.picture,t.name,t.vendor_code,t.description,t.price,t.currencyId)">
+                        Корзина
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12 col-md-12">
+        <div class="desc">
+            <h4 ng-bind-html="goodStore.description"></h4>
+        </div>
+    </div>
+</div>

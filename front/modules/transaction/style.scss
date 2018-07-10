@@ -21,3 +21,66 @@
   border: 1px solid black;
   color: black;
 }
+
+.good {
+  border-radius: 5px 5px 5px 5px;
+  margin-left: 33px;
+  margin-right: 33px;
+  border: 1px solid black;
+  .good-table {
+    color: black;
+    .good-thead {
+      tr {
+        th {
+          text-align: center;
+          width: 50px;
+        }
+      }
+    }
+
+    .good-tbody {
+      tr {
+        td {
+          border-top: 1px solid black;
+
+          textarea {
+            text-align: justify;
+            padding: 10px;
+            border: none;
+            overflow: auto;
+            resize: none;
+            height: 100px;
+          }
+          input {
+            text-align: center;
+            border: none;
+            overflow: auto;
+            background: rgba(0, 0, 0, 0);
+            width: 110px;
+          }
+        }
+      }
+    }
+  }
+
+  hr {
+    background: black;
+    color: black;
+    border-top: 1px solid black;
+  }
+
+
+  .total {
+    color: black;
+    //margin-right: 10px;
+
+    input {
+      border: none;
+      margin-right: 2px;
+    }
+  }
+}
+
+.modal-dialog {
+  width: 715px;
+}

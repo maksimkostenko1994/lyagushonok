@@ -9,10 +9,51 @@
             </div>
             <div class="modal-body" align="center">
                 <form method="POST" action="https://formspree.io/kostenko.m.t@gmail.com">
-                    <input class="from-input" type="email" name="email" placeholder="Ваш email..." required>
-                    <input class="from-input" name="tel" type="text" placeholder="Введите Ваш номер телефона..."
+                    <input class="from-input" type="email" name="Почта" placeholder="Ваш email..." required>
+                    <input class="from-input" name="Телефон" type="text" placeholder="Введите Ваш номер телефона..."
                            required>
-                    <textarea class="form-text-input" name="message" placeholder="Your message">{{getItems()}}</textarea>
+                    <div class="good">
+                        <table class="good-table">
+                            <thead class="good-thead">
+                            <tr>
+                                <th>Название</th>
+                                <th>Артикул</th>
+                                <th>Цена</th>
+                                <th>Количество</th>
+                                <th>Сума</th>
+                            </tr>
+                            </thead>
+                            <tbody class="good-tbody">
+                            <tr ng-repeat="store in storeData">
+                                <td>
+                                <textarea class="" name="Название" placeholder="Your message"
+                                          readonly>{{store.name}}</textarea>
+                                </td>
+                                <td>
+                                    <input class="" value="{{store.code}}" name="Артикул" placeholder="Your message"
+                                           readonly>
+                                </td>
+                                <td>
+                                    <input class="" value="{{store.price}} {{store.currency}}"
+                                           name="Цена" placeholder="Your message" readonly>
+                                </td>
+                                <td>
+                                    <input class="" value="{{store.index}}" name="Количество" placeholder="Your message"
+                                           readonly>
+                                </td>
+                                <td>
+                                    <input class="" value="{{store.price*store.index|number: 2}} {{store.currency}}"
+                                           name="Сума" placeholder="Your message"
+                                           readonly>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <hr>
+                        <div class="total" align="right">
+                            Итого: <input type="text" name="Итого" value="{{total|number: 2}} {{storeData[0].currency}}" readonly>
+                        </div>
+                    </div>
                     <button class="btn btn-default" type="submit">Send</button>
                 </form>
             </div>

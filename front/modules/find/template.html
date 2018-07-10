@@ -1,16 +1,15 @@
 <div class="row" ng-init="limit=12">
     <div ng-repeat="toy in toys">
-        <div class="col-md-4 col-lg-4" ng-repeat="t in toy.yml_catalog.shop.offers.offer | filter:text | limitTo : limit">
-            <div class="toy-data">
-                <div class="row" align="center">
-                    <div class="img">
-                        <img ng-src="{{t.picture}}" class="image" align="middle" height="85px"
-                             width="125px">
-                    </div>
-                </div>
+        <div class="col-md-3 col-lg-3" ng-repeat="t in toy.yml_catalog.shop.offers.offer | filter:text | limitTo : limit">
+            <div class="toy-data" ng-click="getGood(t)">
                 <div class="row" align="center">
                     <div class="name">
                         <b>{{t.name}}</b>
+                    </div>
+                </div>
+                <div class="row" align="center">
+                    <div class="img">
+                        <img ng-src="{{t.picture}}" class="image" align="middle" height="130">
                     </div>
                 </div>
                 <div class="row" align="center">
@@ -19,9 +18,8 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="description">
-                        <h6><b>Описание:</b></h6>
-                        <h6 ng-bind-html="t.description"></h6>
+                    <div class="price">
+                        <h3><b>{{t.price}} {{t.currencyId}}</b></h3>
                     </div>
                 </div>
                 <div class="row">

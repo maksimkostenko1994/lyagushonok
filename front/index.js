@@ -24,6 +24,7 @@ import './modules/menu/style.scss'
 import './modules/categories/style.scss'
 import './modules/pay/style.scss'
 import './modules/transaction/style.scss'
+import './modules/good/style.scss';
 
 import './main'
 import './route.js';
@@ -40,6 +41,7 @@ import './modules/categories/controller.js';
 import './modules/articles/controller.js';
 import './modules/about/controller.js';
 import './modules/transaction/controller';
+import './modules/good/controller'
 import 'webpack-icons-installer/bootstrap';
 
 import '../pictures/1.jpg'

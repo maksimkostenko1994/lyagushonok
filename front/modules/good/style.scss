@@ -1,0 +1,29 @@
+.good-info {
+
+  margin: 20px;
+
+  .price {
+    color: #2daf0d;
+  }
+
+  .add-button button {
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+    border: none;
+    background: linear-gradient(to bottom, #6390FF, #5873ff);
+    border-radius: 5px 5px 5px 5px;
+    height: 30px;
+
+    &:hover {
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+      background: linear-gradient(to bottom, #5873ff, #6390FF);
+    }
+  }
+
+}
+
+.desc {
+  margin: 20px;
+  text-align: justify;
+}

@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "2e0b2917b9b732177752"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "db4594ada5801536a9d2"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -3805,9 +3805,7 @@ __webpack_require__(24);
 
 __webpack_require__(25);
 
-__webpack_require__(36);
-
-__webpack_require__(37);
+__webpack_require__(26);
 
 __webpack_require__(38);
 
@@ -3833,11 +3831,11 @@ __webpack_require__(48);
 
 __webpack_require__(49);
 
+__webpack_require__(50);
+
 __webpack_require__(51);
 
 __webpack_require__(52);
-
-__webpack_require__(53);
 
 __webpack_require__(54);
 
@@ -3866,6 +3864,12 @@ __webpack_require__(65);
 __webpack_require__(66);
 
 __webpack_require__(67);
+
+__webpack_require__(68);
+
+__webpack_require__(69);
+
+__webpack_require__(70);
 
 /***/ }),
 /* 4 */
@@ -37413,6 +37417,12 @@ $(document).ready(function () {
 
 /***/ }),
 /* 24 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37421,7 +37431,7 @@ $(document).ready(function () {
 angular.module('app', ['ngSanitize', 'ngRoute', 'angular.filter']);
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37431,73 +37441,78 @@ angular.module('app', ['ngSanitize', 'ngRoute', 'angular.filter']);
  * Created by Maksim on 26.02.2017.
  */
 angular.module('app').config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
-    $routeProvider.when('/main', { template: __webpack_require__(26) }).when('/about', { template: __webpack_require__(27), controller: 'AboutController' }).when('/shares', { template: __webpack_require__(28), controller: 'SharesController' }).when('/payment', { template: __webpack_require__(29), controller: 'PaymentController' }).when('/articles', { template: __webpack_require__(30), controller: 'ArticleController' }).when('/toys', { template: __webpack_require__(31), controller: 'ToysController' }).when('/category/:category', { template: __webpack_require__(32), controller: 'CategoriesController' }).when('/search/:text', { template: __webpack_require__(33), controller: 'FindController' }).when('/pay', { template: __webpack_require__(34), controller: 'PayController' }).when('/pay/transaction', { template: __webpack_require__(35), controller: 'TransController' });
+    $routeProvider.when('/main', { template: __webpack_require__(27) }).when('/about', { template: __webpack_require__(28), controller: 'AboutController' }).when('/shares', { template: __webpack_require__(29), controller: 'SharesController' }).when('/payment', { template: __webpack_require__(30), controller: 'PaymentController' }).when('/articles', { template: __webpack_require__(31), controller: 'ArticleController' }).when('/toys', { template: __webpack_require__(32), controller: 'ToysController' }).when('/category/:category', { template: __webpack_require__(33), controller: 'CategoriesController' }).when('/search/:text', { template: __webpack_require__(34), controller: 'FindController' }).when('/pay', { template: __webpack_require__(35), controller: 'PayController' }).when('/pay/transaction', { template: __webpack_require__(36), controller: 'TransController' }).when('/toys/:id', { template: __webpack_require__(37), controller: 'GoodController' }).otherwise('/toys');
     $locationProvider.html5Mode({ enable: true, requireBase: false }).hashPrefix('!');
-    //window.location = '#!/main';
 }]);
-
-/***/ }),
-/* 26 */
-/***/ (function(module, exports) {
-
-module.exports = "<div class=\"body\" align=\"center\">\r\n    <div align=\"center\">\r\n        <h2>Уважаемые посетители!</h2>\r\n    </div>\r\n    <div>\r\n        <p>\r\n            <b>Добро пожаловать в интернет-магазин игрушек, одежды и прочих детских товаров \"Лягушонок\"!</b><br> У нас Вы\r\n            сможете\r\n            приобрести качественные товары для своего чада по самым выгодным ценам!<br>\r\n            Широкий ассортимент нашего магазина позволит без труда подобрать подарок деткам разного\r\n            возраста и удовлетворить самого взыскательного покупателя!!!<br>\r\n            По всем вопросам обращайтесь по указанным телефонам, наши менеджеры с радостью подскажут и помогут\r\n            определиться\r\n            с\r\n            выбором!!!\r\n        </p>\r\n    </div>\r\n\r\n    <p><b>Ждем Ваших звонков и заказов!!!<br> Приятных покупок и восторженных детских улыбок!!!</br></p>\r\n</div>";
 
 /***/ }),
 /* 27 */
 /***/ (function(module, exports) {
 
-module.exports = "<h2>О нас</h2>\r\n";
+module.exports = "<div class=\"body\" align=\"center\">\r\n    <div align=\"center\">\r\n        <h2>Уважаемые посетители!</h2>\r\n    </div>\r\n    <div>\r\n        <p>\r\n            <b>Добро пожаловать в интернет-магазин игрушек, одежды и прочих детских товаров \"Лягушонок\"!</b><br> <b>У\r\n            нас Вы\r\n            сможете\r\n            приобрести качественные товары для своего чада по самым выгодным ценам!<br>\r\n            Широкий ассортимент нашего магазина позволит без труда подобрать подарок деткам разного\r\n            возраста и удовлетворить самого взыскательного покупателя!!!<br>\r\n            По всем вопросам обращайтесь по указанным телефонам, наши менеджеры с радостью подскажут и помогут\r\n            определиться\r\n            с\r\n            выбором!!!\r\n        </b>\r\n        </p>\r\n    </div>\r\n\r\n    <p><b>Ждем Ваших звонков и заказов!!!<br> Приятных покупок и восторженных детских улыбок!!!</br></b></p>\r\n</div>";
 
 /***/ }),
 /* 28 */
 /***/ (function(module, exports) {
 
-module.exports = "<h2>Акции и скидки</h2>";
+module.exports = "<h2>О нас</h2>\r\n";
 
 /***/ }),
 /* 29 */
 /***/ (function(module, exports) {
 
-module.exports = "<h2>Оплата и доставка</h2>";
+module.exports = "<h2>Акции и скидки</h2>";
 
 /***/ }),
 /* 30 */
 /***/ (function(module, exports) {
 
-module.exports = "<h2>Статьи</h2>";
+module.exports = "<h2>Оплата и доставка</h2>";
 
 /***/ }),
 /* 31 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\" ng-init=\"limit=12\">\r\n    <div ng-repeat=\"toy in toys\">\r\n        <div class=\"col-md-4 col-lg-4\" ng-repeat=\"t in toy.yml_catalog.shop.offers.offer | limitTo : limit\">\r\n            <div class=\"toy-data\">\r\n                <div class=\"row\" align=\"center\">\r\n                    <div class=\"img\">\r\n                        <img ng-src=\"{{t.picture}}\" class=\"image\" align=\"middle\" height=\"85px\"\r\n                             width=\"125px\">\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\" align=\"center\">\r\n                    <div class=\"name\">\r\n                        <b>{{t.name}}</b>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\" align=\"center\">\r\n                    <div class=\"code\">\r\n                        <b>Код: {{t.vendor_code}}</b>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"description\">\r\n                        <h6><b>Описание:</b></h6>\r\n                        <h6 ng-bind-html=\"t.description\"></h6>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"price\">\r\n                        <h5><b>Цена: {{t.price}} {{t.currencyId}}</b></h5>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"add-button\">\r\n                        <button ng-click=\"addToy(t.picture,t.name,t.vendor_code,t.description,t.price,t.currencyId)\">\r\n                            Добавить\r\n                        </button>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col-md-4 col-lg-4\">\r\n            <div class=\"add-limit\" ng-click=\"limit=limit+12\"><img src=\"/dist/img/financial-planning-cycle.png\"\r\n                                                                  height=\"175px\" width=\"175px\"></div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n";
+module.exports = "<h2>Статьи</h2>";
 
 /***/ }),
 /* 32 */
 /***/ (function(module, exports) {
 
-module.exports = "<div ng-init=\"limit=12\">\r\n    <div class=\"col-md-4 col-lg-4\" ng-repeat=\"t in category_toys | limitTo : limit\">\r\n        <div class=\"category-data\">\r\n            <div class=\"row\" align=\"center\">\r\n                <div class=\"img\">\r\n                    <img ng-src=\"{{t.picture}}\" class=\"image\" align=\"middle\" height=\"85px\"\r\n                         width=\"125px\">\r\n                </div>\r\n            </div>\r\n            <div class=\"row\" align=\"center\">\r\n                <div class=\"name\">\r\n                    <b>{{t.name}}</b>\r\n                </div>\r\n            </div>\r\n            <div class=\"row\" align=\"center\">\r\n                <div class=\"code\">\r\n                    <b>Код: {{t.vendor_code}}</b>\r\n                </div>\r\n            </div>\r\n            <div class=\"row\">\r\n                <div class=\"description\">\r\n                    <h6><b>Описание:</b></h6>\r\n                    <h6 ng-bind-html=\"t.description\"></h6>\r\n                </div>\r\n            </div>\r\n            <div class=\"row\">\r\n                <div class=\"price\">\r\n                    <h5><b>Цена: {{t.price}} {{t.currencyId}}</b></h5>\r\n                </div>\r\n            </div>\r\n            <div class=\"row\">\r\n                <div class=\"add-button\">\r\n                    <button ng-click=\"addToy(t.picture,t.name,t.vendor_code,t.description,t.price,t.currencyId)\">Добавить\r\n                    </button>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col-md-4 col-lg-4\">\r\n            <div class=\"add-limit\" ng-click=\"limit=limit+12\"><img src=\"/dist/img/financial-planning-cycle.png\"\r\n                                                                  height=\"175px\" width=\"175px\"></div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n";
+module.exports = "<div class=\"row\">\r\n    <div class=\"sorting\"><b>Сортировать за:</b><a ng-click=\"sortBy('price')\">Цена <span\r\n            class=\"glyphicon glyphicon-chevron-down\"></span></a>\r\n    </div>\r\n</div>\r\n<div class=\"row\" ng-init=\"limit=12\">\r\n    <div ng-repeat=\"toy in toys\">\r\n        <div class=\"col-md-3 col-lg-3\"\r\n             ng-repeat=\"t in toy.yml_catalog.shop.offers.offer | limitTo : limit | orderBy:propertyName:reverse\">\r\n            <div class=\"toy-data\" ng-click=\"getGood(t)\">\r\n                <div class=\"row\" align=\"center\">\r\n                    <div class=\"name\">\r\n                        <b>{{t.name}}</b>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\" align=\"center\">\r\n                    <div class=\"img\">\r\n                        <img ng-src=\"{{t.picture}}\" class=\"image\" align=\"middle\" height=\"130\">\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\" align=\"center\">\r\n                    <div class=\"code\">\r\n                        <b>Код: {{t.vendor_code}}</b>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"price\">\r\n                        <h3><b>{{t.price}} {{t.currencyId}}</b></h3>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"add-button\">\r\n                        <button ng-click=\"addToy(t.picture,t.name,t.vendor_code,t.description,t.price,t.currencyId)\">\r\n                            Добавить\r\n                        </button>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col-md-4 col-lg-4\">\r\n            <div class=\"add-limit\" ng-click=\"limit=limit+12\"><img src=\"/dist/img/financial-planning-cycle.png\"\r\n                                                                  height=\"175px\" width=\"175px\"></div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n";
 
 /***/ }),
 /* 33 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\" ng-init=\"limit=12\">\r\n    <div ng-repeat=\"toy in toys\">\r\n        <div class=\"col-md-4 col-lg-4\" ng-repeat=\"t in toy.yml_catalog.shop.offers.offer | filter:text | limitTo : limit\">\r\n            <div class=\"toy-data\">\r\n                <div class=\"row\" align=\"center\">\r\n                    <div class=\"img\">\r\n                        <img ng-src=\"{{t.picture}}\" class=\"image\" align=\"middle\" height=\"85px\"\r\n                             width=\"125px\">\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\" align=\"center\">\r\n                    <div class=\"name\">\r\n                        <b>{{t.name}}</b>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\" align=\"center\">\r\n                    <div class=\"code\">\r\n                        <b>Код: {{t.vendor_code}}</b>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"description\">\r\n                        <h6><b>Описание:</b></h6>\r\n                        <h6 ng-bind-html=\"t.description\"></h6>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"price\">\r\n                        <h5><b>Цена: {{t.price}} {{t.currencyId}}</b></h5>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"add-button\">\r\n                        <button ng-click=\"addToy(t.picture,t.name,t.vendor_code,t.description,t.price,t.currencyId)\">\r\n                            Добавить\r\n                        </button>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col-md-4 col-lg-4\">\r\n            <div class=\"add-limit\" ng-click=\"limit=limit+12\"><img src=\"/dist/img/financial-planning-cycle.png\"\r\n                                                                  height=\"175px\" width=\"175px\"></div>\r\n        </div>\r\n    </div>\r\n</div>\r\n";
+module.exports = "<div ng-init=\"limit=12\">\r\n    <div class=\"col-md-3 col-lg-3\" ng-repeat=\"t in category_toys | limitTo : limit\">\r\n        <div class=\"toy-data\" ng-click=\"getGood(t)\">\r\n            <div class=\"row\" align=\"center\">\r\n                <div class=\"name\">\r\n                    <b>{{t.name}}</b>\r\n                </div>\r\n            </div>\r\n            <div class=\"row\" align=\"center\">\r\n                <div class=\"img\">\r\n                    <img ng-src=\"{{t.picture}}\" class=\"image\" align=\"middle\" height=\"130\">\r\n                </div>\r\n            </div>\r\n            <div class=\"row\" align=\"center\">\r\n                <div class=\"code\">\r\n                    <b>Код: {{t.vendor_code}}</b>\r\n                </div>\r\n            </div>\r\n            <div class=\"row\">\r\n                <div class=\"price\">\r\n                    <h3><b>{{t.price}} {{t.currencyId}}</b></h3>\r\n                </div>\r\n            </div>\r\n            <div class=\"row\">\r\n                <div class=\"add-button\">\r\n                    <button ng-click=\"addToy(t.picture,t.name,t.vendor_code,t.description,t.price,t.currencyId)\">Добавить\r\n                    </button>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col-md-4 col-lg-4\">\r\n            <div class=\"add-limit\" ng-click=\"limit=limit+12\"><img src=\"/dist/img/financial-planning-cycle.png\"\r\n                                                                  height=\"175px\" width=\"175px\"></div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n";
 
 /***/ }),
 /* 34 */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"myModal\" class=\"modal\" role=\"dialog\" style=\"opacity: 1; display: block;\">\r\n    <div class=\"modal-dialog\">\r\n\r\n        <div class=\"modal-content pay window\">\r\n            <div class=\"modal-header\">\r\n                <a class=\"close\" data-dismiss=\"modal\" href=\"#!/toys\">&times;</a>\r\n                <h4 class=\"modal-title\">Оплата<span style=\"color: black\" class=\"glyphicon glyphicon-menu-right\"></span>Коректирование товара</h4>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                <div class=\"row\">\r\n                    <div class=\"col-lg-12 col-md-12\" ng-repeat=\"store in storeData| unique:'img'\">\r\n                        <div class=\"row pay-modal\">\r\n                            <div class=\"col-lg-5\"><img ng-src=\"{{store.img}}\"\r\n                                                       height=\"150px\"\r\n                                                       width=\"200px\"></div>\r\n                            <div class=\"col-lg-6 col-md-6\">\r\n                                <div class=\"row text-padding\"><h4><b>{{store.name}}</b></h4></div>\r\n                                <div class=\"row text-padding\"><b>Артикул:</b>: <i>{{store.code}}</i></div>\r\n                                <div class=\"row text-padding\"><b>Цена:</b> <i>{{store.price}} {{store.currency}}</i>\r\n                                </div>\r\n                                <div class=\"row text-padding\"><b>Описание:</b><i ng-bind-html=\"store.description\"></i>\r\n                                </div>\r\n                                <div class=\"row\">\r\n                                    <button ng-click=\"counterDown($index)\"><span\r\n                                            class=\"glyphicon glyphicon-chevron-left\"></span></button>\r\n                                    {{store.index}}\r\n                                    <button ng-click=\"counterUp($index)\"><span\r\n                                            class=\"glyphicon glyphicon-chevron-right\"></span></button>\r\n                                    <b>{{store.index * store.price | number: 2}} {{store.currency}}</b>\r\n                                </div>\r\n                            </div>\r\n                            <a ng-click=\"remove(store)\">\r\n                                <div class=\"col-lg-1\"><span class=\"glyphicon glyphicon-remove\"></span></div>\r\n                            </a>\r\n                        </div>\r\n                        <hr>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\" align=\"right\">\r\n                    <div class=\"col-lg-12\">\r\n                        <b>Итого: {{total() | number: 2}} UAH</b>\r\n                    </div>\r\n                    <hr>\r\n                </div>\r\n            </div>\r\n            <div align=\"right\">\r\n                <a href=\"#!/toys\" type=\"button\" ng-click=\"clear()\" class=\"btn btn-default\"\r\n                   data-dismiss=\"modal\">Очистить</a>\r\n                <a ng-click=\"next()\" class=\"btn btn-default\" data-dismiss=\"modal\">Далее</a>\r\n                <a href=\"#!/toys\" type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Закрить</a>\r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n</div>\r\n\r\n";
+module.exports = "<div class=\"row\" ng-init=\"limit=12\">\r\n    <div ng-repeat=\"toy in toys\">\r\n        <div class=\"col-md-3 col-lg-3\" ng-repeat=\"t in toy.yml_catalog.shop.offers.offer | filter:text | limitTo : limit\">\r\n            <div class=\"toy-data\" ng-click=\"getGood(t)\">\r\n                <div class=\"row\" align=\"center\">\r\n                    <div class=\"name\">\r\n                        <b>{{t.name}}</b>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\" align=\"center\">\r\n                    <div class=\"img\">\r\n                        <img ng-src=\"{{t.picture}}\" class=\"image\" align=\"middle\" height=\"130\">\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\" align=\"center\">\r\n                    <div class=\"code\">\r\n                        <b>Код: {{t.vendor_code}}</b>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"price\">\r\n                        <h3><b>{{t.price}} {{t.currencyId}}</b></h3>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"price\">\r\n                        <h5><b>Цена: {{t.price}} {{t.currencyId}}</b></h5>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\">\r\n                    <div class=\"add-button\">\r\n                        <button ng-click=\"addToy(t.picture,t.name,t.vendor_code,t.description,t.price,t.currencyId)\">\r\n                            Добавить\r\n                        </button>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col-md-4 col-lg-4\">\r\n            <div class=\"add-limit\" ng-click=\"limit=limit+12\"><img src=\"/dist/img/financial-planning-cycle.png\"\r\n                                                                  height=\"175px\" width=\"175px\"></div>\r\n        </div>\r\n    </div>\r\n</div>\r\n";
 
 /***/ }),
 /* 35 */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"nextModal\" class=\"modal\" role=\"dialog\" style=\"opacity: 1; display: block;\">\r\n    <div class=\"modal-dialog\">\r\n\r\n        <div class=\"modal-content pay window\">\r\n            <div class=\"modal-header\">\r\n                <a class=\"close\" data-dismiss=\"modal\" href=\"#!/toys\">&times;</a>\r\n                <h4 class=\"modal-title\">Оплата<span style=\"color: black\" class=\"glyphicon glyphicon-menu-right\"></span>Коректирование\r\n                    товара<span style=\"color: black\" class=\"glyphicon glyphicon-menu-right\"></span>Оплата товара</h4>\r\n            </div>\r\n            <div class=\"modal-body\" align=\"center\">\r\n                <div class=\"row\">\r\n                    <input class=\"from-input\" id=\"email\" type=\"email\" placeholder=\"Введите Ваш email...\" required\r\n                           ng-model=\"transaction.email\">\r\n                </div>\r\n                <div class=\"row\">\r\n                    <input class=\"from-input\" id=\"tel\" type=\"text\" placeholder=\"Введите Ваш номер телефона...\" required ng-model=\"transaction.tel\">\r\n                </div>\r\n                <div class=\"row\">\r\n                    <textarea class=\"form-text-input\" id=\"text\" ng-model=\"transaction.text\"></textarea>\r\n                </div>\r\n            </div>\r\n            <div align=\"right\">\r\n                <a href=\"#!/toys\" type=\"button\" ng-click=\"clear()\" class=\"btn btn-default\"\r\n                   data-dismiss=\"modal\">Очистить</a>\r\n                <a href=\"#!/pay\" type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Назад</a>\r\n                <a ng-click=\"sentMail()\" type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Отправить</a>\r\n                <a href=\"#!/toys\" type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Закрить</a>\r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n</div>";
+module.exports = "<div id=\"myModal\" class=\"modal\" role=\"dialog\" style=\"opacity: 1; display: block;\">\r\n    <div class=\"modal-dialog\">\r\n\r\n        <div class=\"modal-content pay window\">\r\n            <div class=\"modal-header\">\r\n                <a class=\"close\" data-dismiss=\"modal\" href=\"#!/toys\">&times;</a>\r\n                <h4 class=\"modal-title\">Оплата<span style=\"color: black\" class=\"glyphicon glyphicon-menu-right\"></span>Коректирование товара</h4>\r\n            </div>\r\n            <div class=\"modal-body\">\r\n                <div class=\"row\">\r\n                    <div class=\"col-lg-12 col-md-12\" ng-repeat=\"store in storeData| unique:'img'\">\r\n                        <div class=\"row pay-modal\">\r\n                            <div class=\"col-lg-5\"><img ng-src=\"{{store.img}}\"\r\n                                                       height=\"150px\"\r\n                                                       width=\"200px\"></div>\r\n                            <div class=\"col-lg-6 col-md-6\">\r\n                                <div class=\"row text-padding\"><h4><b>{{store.name}}</b></h4></div>\r\n                                <div class=\"row text-padding\"><b>Артикул:</b>: <i>{{store.code}}</i></div>\r\n                                <div class=\"row text-padding\"><b>Цена:</b> <i>{{store.price}} {{store.currency}}</i>\r\n                                </div>\r\n                                <div class=\"row text-padding\"><b>Коментарий:</b><textarea name=\"Коментарий\"></textarea>\r\n                                </div>\r\n                                <div class=\"row\">\r\n                                    <button ng-click=\"counterDown($index)\"><span\r\n                                            class=\"glyphicon glyphicon-chevron-left\"></span></button>\r\n                                    {{store.index}}\r\n                                    <button ng-click=\"counterUp($index)\"><span\r\n                                            class=\"glyphicon glyphicon-chevron-right\"></span></button>\r\n                                    <b>{{store.index * store.price | number: 2}} {{store.currency}}</b>\r\n                                </div>\r\n                            </div>\r\n                            <a ng-click=\"remove(store)\">\r\n                                <div class=\"col-lg-1\"><span class=\"glyphicon glyphicon-remove\"></span></div>\r\n                            </a>\r\n                        </div>\r\n                        <hr>\r\n                    </div>\r\n                </div>\r\n                <div class=\"row\" align=\"right\">\r\n                    <div class=\"col-lg-12\">\r\n                        <b>Итого: {{total() | number: 2}} UAH</b>\r\n                    </div>\r\n                    <hr>\r\n                </div>\r\n            </div>\r\n            <div align=\"right\">\r\n                <a href=\"#!/toys\" type=\"button\" ng-click=\"clear()\" class=\"btn btn-default\"\r\n                   data-dismiss=\"modal\">Очистить</a>\r\n                <a ng-click=\"next()\" class=\"btn btn-default\" data-dismiss=\"modal\">Далее</a>\r\n                <a href=\"#!/toys\" type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Закрить</a>\r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n</div>\r\n\r\n";
 
 /***/ }),
 /* 36 */
+/***/ (function(module, exports) {
+
+module.exports = "<div id=\"nextModal\" class=\"modal\" role=\"dialog\" style=\"opacity: 1; display: block;\">\r\n    <div class=\"modal-dialog\">\r\n\r\n        <div class=\"modal-content pay window\">\r\n            <div class=\"modal-header\">\r\n                <a class=\"close\" data-dismiss=\"modal\" href=\"#!/toys\">&times;</a>\r\n                <h4 class=\"modal-title\">Оплата<span style=\"color: black\" class=\"glyphicon glyphicon-menu-right\"></span>Коректирование\r\n                    товара<span style=\"color: black\" class=\"glyphicon glyphicon-menu-right\"></span>Оплата товара</h4>\r\n            </div>\r\n            <div class=\"modal-body\" align=\"center\">\r\n                <form method=\"POST\" action=\"https://formspree.io/kostenko.m.t@gmail.com\">\r\n                    <input class=\"from-input\" type=\"email\" name=\"Почта\" placeholder=\"Ваш email...\" required>\r\n                    <input class=\"from-input\" name=\"Телефон\" type=\"text\" placeholder=\"Введите Ваш номер телефона...\"\r\n                           required>\r\n                    <div class=\"good\">\r\n                        <table class=\"good-table\">\r\n                            <thead class=\"good-thead\">\r\n                            <tr>\r\n                                <th>Название</th>\r\n                                <th>Артикул</th>\r\n                                <th>Цена</th>\r\n                                <th>Количество</th>\r\n                                <th>Сума</th>\r\n                            </tr>\r\n                            </thead>\r\n                            <tbody class=\"good-tbody\">\r\n                            <tr ng-repeat=\"store in storeData\">\r\n                                <td>\r\n                                <textarea class=\"\" name=\"Название\" placeholder=\"Your message\"\r\n                                          readonly>{{store.name}}</textarea>\r\n                                </td>\r\n                                <td>\r\n                                    <input class=\"\" value=\"{{store.code}}\" name=\"Артикул\" placeholder=\"Your message\"\r\n                                           readonly>\r\n                                </td>\r\n                                <td>\r\n                                    <input class=\"\" value=\"{{store.price}} {{store.currency}}\"\r\n                                           name=\"Цена\" placeholder=\"Your message\" readonly>\r\n                                </td>\r\n                                <td>\r\n                                    <input class=\"\" value=\"{{store.index}}\" name=\"Количество\" placeholder=\"Your message\"\r\n                                           readonly>\r\n                                </td>\r\n                                <td>\r\n                                    <input class=\"\" value=\"{{store.price*store.index|number: 2}} {{store.currency}}\"\r\n                                           name=\"Сума\" placeholder=\"Your message\"\r\n                                           readonly>\r\n                                </td>\r\n                            </tr>\r\n                            </tbody>\r\n                        </table>\r\n                        <hr>\r\n                        <div class=\"total\" align=\"right\">\r\n                            Итого: <input type=\"text\" name=\"Итого\" value=\"{{total|number: 2}} {{storeData[0].currency}}\" readonly>\r\n                        </div>\r\n                    </div>\r\n                    <button class=\"btn btn-default\" type=\"submit\">Send</button>\r\n                </form>\r\n            </div>\r\n            <div align=\"right\">\r\n                <a href=\"#!/toys\" type=\"button\" ng-click=\"clear()\" class=\"btn btn-default\"\r\n                   data-dismiss=\"modal\">Очистить</a>\r\n                <a href=\"#!/pay\" type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Назад</a>\r\n                <a href=\"#!/toys\" type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Закрить</a>\r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n</div>";
+
+/***/ }),
+/* 37 */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"row\">\r\n    <div class=\"good-info\">\r\n        <div class=\"col-lg-8 col-md-8\"><img ng-src=\"{{goodStore.img}}\"></div>\r\n        <div class=\"col-lg-4 col-md-4\">\r\n            <div class=\"row\">\r\n                <h3>{{goodStore.name}}</h3>\r\n            </div>\r\n            <div class=\"row\">\r\n                <h5>{{goodStore.code}}</h5>\r\n            </div>\r\n            <div class=\"row\">\r\n                <h3 class=\"price\">{{goodStore.price}} {{goodStore.currency}}</h3>\r\n            </div>\r\n            <div class=\"row\">\r\n                <div class=\"add-button\">\r\n                    <button ng-click=\"addToy(t.picture,t.name,t.vendor_code,t.description,t.price,t.currencyId)\">\r\n                        Корзина\r\n                    </button>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<div class=\"row\">\r\n    <div class=\"col-lg-12 col-md-12\">\r\n        <div class=\"desc\">\r\n            <h4 ng-bind-html=\"goodStore.description\"></h4>\r\n        </div>\r\n    </div>\r\n</div>";
+
+/***/ }),
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37510,6 +37525,7 @@ angular.module('app').controller('MenuController', ['$scope', '$window', '$http'
             return x2js.xml2js(cnv);
         }
     }).then(function (res) {
+        $scope.res_data = res.data.yml_catalog.shop.categories.category;
         var category_data = [];
         var _iteratorNormalCompletion = true;
         var _didIteratorError = false;
@@ -37542,6 +37558,36 @@ angular.module('app').controller('MenuController', ['$scope', '$window', '$http'
     });
     $scope.item = '';
     $scope.category = function (id) {
+        var post = [];
+        var _iteratorNormalCompletion2 = true;
+        var _didIteratorError2 = false;
+        var _iteratorError2 = undefined;
+
+        try {
+            for (var _iterator2 = $scope.res_data[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+                var i = _step2.value;
+
+                if (id === i._parentId) {
+                    post.push({ name: i.__text, id: i._id });
+                }
+            }
+        } catch (err) {
+            _didIteratorError2 = true;
+            _iteratorError2 = err;
+        } finally {
+            try {
+                if (!_iteratorNormalCompletion2 && _iterator2.return) {
+                    _iterator2.return();
+                }
+            } finally {
+                if (_didIteratorError2) {
+                    throw _iteratorError2;
+                }
+            }
+        }
+
+        console.log(JSON.stringify(post));
+        $scope.post_data = post;
         CategoriesService.setCategory(id);
         $window.location.href = '/#!/category/' + id;
     };
@@ -37550,11 +37596,13 @@ angular.module('app').controller('MenuController', ['$scope', '$window', '$http'
         FindService.setText(item);
         $window.location.href = '/#!/search/' + item;
     };
+
+    $scope.postCategory = function (id) {};
 }]);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 37 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37576,7 +37624,7 @@ angular.module('app').service('CategoriesService', function () {
 });
 
 /***/ }),
-/* 38 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37599,7 +37647,7 @@ angular.module('app').service('FindService', function () {
 });
 
 /***/ }),
-/* 39 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37608,7 +37656,7 @@ angular.module('app').service('FindService', function () {
 /**
  * Created by Maksim on 28.02.2017.
  */
-angular.module('app').controller('ToysController', ['$scope', '$http', 'PayService', function ($scope, $http, PayService) {
+angular.module('app').controller('ToysController', ['$scope', '$http', '$window', 'PayService', function ($scope, $http, $window, PayService) {
     $http.get("https://toysi.com.ua/feed-products-residue.php", {
         transformResponse: function transformResponse(cnv) {
             var x2js = new X2JS();
@@ -37621,11 +37669,32 @@ angular.module('app').controller('ToysController', ['$scope', '$http', 'PayServi
     $scope.addToy = function (img, name, vendor_code, description, price, currencyId) {
         PayService.setProduct(img, name, vendor_code, description, price, currencyId);
     };
+
+    $scope.propertyName = 'id';
+    $scope.reverse = true;
+
+    $scope.sortBy = function (propertyName) {
+        $scope.reverse = $scope.propertyName === propertyName ? !$scope.reverse : false;
+        $scope.propertyName = propertyName;
+    };
+
+    $scope.getGood = function (good) {
+        localStorage.setItem('good', JSON.stringify({
+            id: good._id,
+            name: good.name,
+            img: good.picture,
+            price: good.price,
+            currency: good.currencyId,
+            description: good.description,
+            code: good.vendor_code
+        }));
+        $window.location.href = '#!/toys/' + good._id;
+    };
 }]);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 40 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37642,7 +37711,7 @@ angular.module('app').controller('SharesController', ['$scope', '$window', funct
 }]);
 
 /***/ }),
-/* 41 */
+/* 43 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37659,7 +37728,7 @@ angular.module('app').controller('PaymentController', ['$scope', '$window', func
 }]);
 
 /***/ }),
-/* 42 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37671,12 +37740,14 @@ angular.module('app').controller('PayController', ['$scope', '$window', 'PayServ
 
     $scope.counterUp = function (index) {
         $scope.storeData[index].index++;
+        localStorage.setItem('payment', JSON.stringify($scope.storeData));
     };
 
     $scope.counterDown = function (index) {
         if ($scope.storeData[index].index > 1) {
             $scope.storeData[index].index--;
         }
+        localStorage.setItem('payment', JSON.stringify($scope.storeData));
     };
 
     $scope.total = function () {
@@ -37704,7 +37775,7 @@ angular.module('app').controller('PayController', ['$scope', '$window', 'PayServ
 }]);
 
 /***/ }),
-/* 43 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37750,13 +37821,13 @@ angular.module('app').service('PayService', function () {
 });
 
 /***/ }),
-/* 44 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(X2JS) {
 
-angular.module('app').controller('FindController', ['$scope', '$http', 'FindService', 'PayService', function ($scope, $http, FindService, PayService) {
+angular.module('app').controller('FindController', ['$scope', '$http', '$window', 'FindService', 'PayService', function ($scope, $http, $window, FindService, PayService) {
     $scope.text = FindService.getText();
     $http.get("https://toysi.com.ua/feed-products-residue.php", {
         transformResponse: function transformResponse(cnv) {
@@ -37770,17 +37841,30 @@ angular.module('app').controller('FindController', ['$scope', '$http', 'FindServ
     $scope.addToy = function (img, name, vendor_code, description, price, currencyId) {
         PayService.setProduct(img, name, vendor_code, description, price, currencyId);
     };
+
+    $scope.getGood = function (good) {
+        localStorage.setItem('good', JSON.stringify({
+            id: good._id,
+            name: good.name,
+            img: good.picture,
+            price: good.price,
+            currency: good.currencyId,
+            description: good.description,
+            code: good.vendor_code
+        }));
+        $window.location.href = '#!/toys/' + good._id;
+    };
 }]);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 45 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(X2JS) {
 
-angular.module('app').controller('CategoriesController', ['$scope', '$http', 'CategoriesService', 'PayService', function ($scope, $http, CategoriesService, PayService) {
+angular.module('app').controller('CategoriesController', ['$scope', '$http', '$window', 'CategoriesService', 'PayService', function ($scope, $http, $window, CategoriesService, PayService) {
     $scope.id = CategoriesService.getCategory();
     $http.get("https://toysi.com.ua/feed-products-residue.php", {
         transformResponse: function transformResponse(cnv) {
@@ -37794,11 +37878,33 @@ angular.module('app').controller('CategoriesController', ['$scope', '$http', 'Ca
         var _iteratorError = undefined;
 
         try {
-            for (var _iterator = res.data.yml_catalog.shop.offers.offer[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-                var t = _step.value;
+            for (var _iterator = res.data.yml_catalog.shop.categories.category[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+                var i = _step.value;
+                var _iteratorNormalCompletion2 = true;
+                var _didIteratorError2 = false;
+                var _iteratorError2 = undefined;
 
-                if (t.categoryId === $scope.id) {
-                    category_data.push(t);
+                try {
+                    for (var _iterator2 = res.data.yml_catalog.shop.offers.offer[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+                        var t = _step2.value;
+
+                        if (t.categoryId === $scope.id || i._parentId === $scope.id) {
+                            category_data.push(t);
+                        }
+                    }
+                } catch (err) {
+                    _didIteratorError2 = true;
+                    _iteratorError2 = err;
+                } finally {
+                    try {
+                        if (!_iteratorNormalCompletion2 && _iterator2.return) {
+                            _iterator2.return();
+                        }
+                    } finally {
+                        if (_didIteratorError2) {
+                            throw _iteratorError2;
+                        }
+                    }
                 }
             }
         } catch (err) {
@@ -37816,17 +37922,30 @@ angular.module('app').controller('CategoriesController', ['$scope', '$http', 'Ca
             }
         }
 
-        return $scope.category_toys = category_data;
+        $scope.category_toys = category_data;
     });
 
     $scope.addToy = function (img, name, vendor_code, description, price, currencyId) {
         PayService.setProduct(img, name, vendor_code, description, price, currencyId);
     };
+
+    $scope.getGood = function (good) {
+        localStorage.setItem('good', JSON.stringify({
+            id: good._id,
+            name: good.name,
+            img: good.picture,
+            price: good.price,
+            currency: good.currencyId,
+            description: good.description,
+            code: good.vendor_code
+        }));
+        $window.location.href = '#!/toys/' + good._id;
+    };
 }]);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 46 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37843,7 +37962,7 @@ angular.module('app').controller('ArticleController', ['$scope', '$window', func
 }]);
 
 /***/ }),
-/* 47 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -37860,130 +37979,141 @@ angular.module('app').controller('AboutController', ['$scope', '$window', functi
 }]);
 
 /***/ }),
-/* 48 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 angular.module('app').controller('TransController', ['$scope', '$window', 'PayService', function ($scope, $window, PayService) {
-
-    $scope.transaction = { email: '', tel: '', text: '' };
+    $scope.storeData = PayService.getProducts();
+    $scope.total = localStorage.getItem('total');
 }]);
-
-/***/ }),
-/* 49 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-__webpack_require__(50);
-
-/***/ }),
-/* 50 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 51 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/1.jpg";
+"use strict";
+
+
+angular.module('app').controller('GoodController', ['$scope', function ($scope) {
+    $scope.goodStore = JSON.parse(localStorage.getItem('good'));
+}]);
 
 /***/ }),
 /* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/3.jpg";
+"use strict";
+
+
+__webpack_require__(53);
 
 /***/ }),
 /* 53 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__.p + "img/111.jpg";
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 /* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/222.jpg";
+module.exports = __webpack_require__.p + "img/1.jpg";
 
 /***/ }),
 /* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/333.jpg";
+module.exports = __webpack_require__.p + "img/3.jpg";
 
 /***/ }),
 /* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/444.jpg";
+module.exports = __webpack_require__.p + "img/111.jpg";
 
 /***/ }),
 /* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/666.jpg";
+module.exports = __webpack_require__.p + "img/222.jpg";
 
 /***/ }),
 /* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/777.png";
+module.exports = __webpack_require__.p + "img/333.jpg";
 
 /***/ }),
 /* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/baby-boy.png";
+module.exports = __webpack_require__.p + "img/444.jpg";
 
 /***/ }),
 /* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/favicon.png";
+module.exports = __webpack_require__.p + "img/666.jpg";
 
 /***/ }),
 /* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/fon-2.png";
+module.exports = __webpack_require__.p + "img/777.png";
 
 /***/ }),
 /* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/search-icon-2.png";
+module.exports = __webpack_require__.p + "img/baby-boy.png";
 
 /***/ }),
 /* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/search-icon.png";
+module.exports = __webpack_require__.p + "img/favicon.png";
 
 /***/ }),
 /* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/1.jpg";
+module.exports = __webpack_require__.p + "img/fon-2.png";
 
 /***/ }),
 /* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/2.jpg";
+module.exports = __webpack_require__.p + "img/search-icon-2.png";
 
 /***/ }),
 /* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "img/kitchen-1.jpg";
+module.exports = __webpack_require__.p + "img/search-icon.png";
 
 /***/ }),
 /* 67 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/1.jpg";
+
+/***/ }),
+/* 68 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/2.jpg";
+
+/***/ }),
+/* 69 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "img/kitchen-1.jpg";
+
+/***/ }),
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "img/financial-planning-cycle.png";

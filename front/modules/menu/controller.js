@@ -8,6 +8,7 @@ angular.module('app').controller('MenuController', ['$scope', '$window', '$http'
                 }
             })
             .then(function (res) {
+                $scope.res_data = res.data.yml_catalog.shop.categories.category;
                 let category_data = [];
                 for (let id of res.data.yml_catalog.shop.categories.category) {
                     if (id._parentId === undefined) {
@@ -19,6 +20,14 @@ angular.module('app').controller('MenuController', ['$scope', '$window', '$http'
             });
         $scope.item = '';
         $scope.category = function (id) {
+            let post = [];
+            for (let i of $scope.res_data) {
+                if (id === i._parentId) {
+                    post.push({name: i.__text, id: i._id});
+                }
+            }
+            console.log(JSON.stringify(post));
+            $scope.post_data = post;
             CategoriesService.setCategory(id);
             $window.location.href = '/#!/category/' + id;
         };
@@ -27,5 +36,9 @@ angular.module('app').controller('MenuController', ['$scope', '$window', '$http'
             FindService.setText(item);
             $window.location.href = '/#!/search/' + item;
         };
+
+        $scope.postCategory = function (id) {
+
+        }
     }
 ]);

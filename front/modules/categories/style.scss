@@ -17,6 +17,7 @@
     .img {
       padding-top: 10px;
       height: 110px;
+
     }
 
     .name {
@@ -61,12 +62,14 @@
 }
 
 .add-limit {
+  width: 230px;
   height: 420px;
   padding-top: 115.5px;
   padding-bottom: 122.5px;
   padding-left: 30px;
   padding-right: 60px;
   margin: 10px;
+  margin-left: 300px;
   &:hover {
     background: rgba(0,0,0,0.1);
     cursor: pointer;

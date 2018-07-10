@@ -16,7 +16,11 @@
             <li ng-repeat="toy in toys">
                 <h4>
                     <a ng-click="category(toy._id)">{{toy.__text}}</a>
+
                 </h4>
+                <h5 ng-repeat="p in post_data" ng-show="p.id === toy._id">
+                    <a ng-click="category(p.id)">{{p.name}}</a>
+                </h5>
             </li>
         </ul>
     </div>

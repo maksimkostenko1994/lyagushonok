@@ -5,12 +5,14 @@ angular.module('app').controller('PayController', ['$scope', '$window', 'PayServ
 
         $scope.counterUp = function (index) {
             $scope.storeData[index].index++;
+            localStorage.setItem('payment', JSON.stringify($scope.storeData));
         };
 
         $scope.counterDown = function (index) {
             if ($scope.storeData[index].index > 1) {
                 $scope.storeData[index].index--;
             }
+            localStorage.setItem('payment', JSON.stringify($scope.storeData));
         };
 
         $scope.total = function() {

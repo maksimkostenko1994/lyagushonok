@@ -13,7 +13,7 @@ angular.module('app').config(['$routeProvider', '$locationProvider', function ($
         .when('/search/:text', {templateUrl: './modules/find/template.html', controller: 'FindController'})
         .when('/pay', {templateUrl: './modules/pay/template.html', controller: 'PayController'})
         .when('/pay/transaction', {templateUrl: './modules/transaction/template.html', controller: 'TransController'})
+        .when('/toys/:id', {templateUrl: './modules/good/template.html', controller: 'GoodController'})
         .otherwise('/toys');
     $locationProvider.html5Mode({enable: true, requireBase: false}).hashPrefix('!');
-    //window.location = '#!/main';
 }]);
