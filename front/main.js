@@ -1,3 +1,1 @@
-angular.module('app', ['ngSanitize','ngRoute', 'angular.filter']).run(['$rootScope', function ($rootScope) {
-    
-}]);
+angular.module('app', ['ngSanitize','ngRoute', 'angular.filter']);

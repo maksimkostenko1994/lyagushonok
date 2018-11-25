@@ -6,19 +6,16 @@ angular.module('app').service('PayService',
         let setProduct = function setProduct(img, name, vendor_code, description, price, currencyId) {
             let goods = getProducts();
             console.log("Goods " + goods);
-            for (let i = 0; i < goods.length(); i++) {
-                if (img !== goods[i].img) {
-                    product.push({
-                        img: img,
-                        name: name,
-                        code: vendor_code,
-                        description: description,
-                        price: price,
-                        currency: currencyId,
-                        index: 1
-                    });
-                }
-            }
+            product.push({
+                img: img,
+                name: name,
+                code: vendor_code,
+                description: description,
+                price: price,
+                currency: currencyId,
+                index: 1
+            });
+
             return localStorage.setItem('payment', JSON.stringify(product));
         };
 

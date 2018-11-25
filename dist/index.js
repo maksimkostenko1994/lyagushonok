@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "db4594ada5801536a9d2"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "87c48db7a5c76e3d6e81"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -37509,7 +37509,7 @@ module.exports = "<div id=\"nextModal\" class=\"modal\" role=\"dialog\" style=\"
 /* 37 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row\">\r\n    <div class=\"good-info\">\r\n        <div class=\"col-lg-8 col-md-8\"><img ng-src=\"{{goodStore.img}}\"></div>\r\n        <div class=\"col-lg-4 col-md-4\">\r\n            <div class=\"row\">\r\n                <h3>{{goodStore.name}}</h3>\r\n            </div>\r\n            <div class=\"row\">\r\n                <h5>{{goodStore.code}}</h5>\r\n            </div>\r\n            <div class=\"row\">\r\n                <h3 class=\"price\">{{goodStore.price}} {{goodStore.currency}}</h3>\r\n            </div>\r\n            <div class=\"row\">\r\n                <div class=\"add-button\">\r\n                    <button ng-click=\"addToy(t.picture,t.name,t.vendor_code,t.description,t.price,t.currencyId)\">\r\n                        Корзина\r\n                    </button>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<div class=\"row\">\r\n    <div class=\"col-lg-12 col-md-12\">\r\n        <div class=\"desc\">\r\n            <h4 ng-bind-html=\"goodStore.description\"></h4>\r\n        </div>\r\n    </div>\r\n</div>";
+module.exports = "<div class=\"row\">\r\n    <div class=\"good-info\">\r\n        <div class=\"col-lg-8 col-md-8\"><img ng-src=\"{{goodStore.img}}\"></div>\r\n        <div class=\"col-lg-4 col-md-4\">\r\n            <div class=\"row\">\r\n                <h3>{{goodStore.name}}</h3>\r\n            </div>\r\n            <div class=\"row\">\r\n                <h5>{{goodStore.code}}</h5>\r\n            </div>\r\n            <div class=\"row\">\r\n                <h3 class=\"price\">{{goodStore.price}} {{goodStore.currency}}</h3>\r\n            </div>\r\n            <div class=\"row\">\r\n                <div class=\"add-button\">\r\n                    <button ng-click=\"addToy(goodStore.picture,goodStore.name,goodStore.vendor_code,goodStore.description,goodStore.price,goodStore.currencyId)\">\r\n                        Корзина\r\n                    </button>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<div class=\"row\">\r\n    <div class=\"col-lg-12 col-md-12\">\r\n        <div class=\"desc\">\r\n            <h4 ng-bind-html=\"goodStore.description\"></h4>\r\n        </div>\r\n    </div>\r\n</div>";
 
 /***/ }),
 /* 38 */
@@ -37786,6 +37786,8 @@ angular.module('app').service('PayService', function () {
     var product = [];
 
     var setProduct = function setProduct(img, name, vendor_code, description, price, currencyId) {
+        var goods = getProducts();
+        console.log("Goods " + goods);
         product.push({
             img: img,
             name: name,
@@ -37795,6 +37797,7 @@ angular.module('app').service('PayService', function () {
             currency: currencyId,
             index: 1
         });
+
         return localStorage.setItem('payment', JSON.stringify(product));
     };
 
@@ -37997,8 +38000,12 @@ angular.module('app').controller('TransController', ['$scope', '$window', 'PaySe
 "use strict";
 
 
-angular.module('app').controller('GoodController', ['$scope', function ($scope) {
+angular.module('app').controller('GoodController', ['$scope', 'PayService', function ($scope, PayService) {
     $scope.goodStore = JSON.parse(localStorage.getItem('good'));
+
+    $scope.addToy = function (img, name, vendor_code, description, price, currencyId) {
+        PayService.setProduct(img, name, vendor_code, description, price, currencyId);
+    };
 }]);
 
 /***/ }),
