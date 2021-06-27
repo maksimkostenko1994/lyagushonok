@@ -29,7 +29,7 @@
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "jquery": "~3.2.1",
-    "lodash": "~4.17.4",
+    "lodash": "~4.17.21",
     "morgan": "~1.7.0",
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.7",
