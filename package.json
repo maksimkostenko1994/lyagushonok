@@ -38,6 +38,6 @@
     "webpack": "^3.11.0",
     "webpack-dev-server": "^2.11.2",
     "webpack-icons-installer": "^1.0.0",
-    "x2js": "^3.2.1"
+    "x2js": "^3.4.3"
   }
 }
